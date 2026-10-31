@@ -1,0 +1,285 @@
+# Practitioner Checklist (Rey). One row per task. Edit freely; run build.py to rebuild.
+# Fields: id, task, why (plain reason), how (method or tool), done (pass bar).
+title: "AEO, GEO and SEO Practitioner Checklist"
+subtitle: "Every task from first look to long-term care. Use with the Field Guide (part numbers in brackets)."
+phases:
+
+- id: "0"
+  title: "Scope the job"
+  intro: "Agree on what you will do and how success is measured, before you touch anything. [Guide part 4, step 0]"
+  groups:
+  - title: "Inputs"
+    items:
+    - {id: "0.1", task: "Write down the business model", why: "Business potential decides which keywords and prompts matter", how: "Kick-off call; their site; sales deck", done: "What they sell, to whom, where, average deal size, main conversion"}
+    - {id: "0.2", task: "Build the fact sheet", why: "You grade AI answers against it", how: "Primary sources only (own site, filings, official releases); source URL and date per fact", done: "8 to 30 facts, each with a source; client confirms in writing"}
+    - {id: "0.3", task: "Write the one-line positioning and 3 proof points", why: "AI repeats what the web repeats; one clear line wins", how: "Ramonov's pattern: the one thing + proof + proof + proof", done: "Client approves the line"}
+    - {id: "0.4", task: "List 3 to 5 business competitors and 3 search competitors", why: "You benchmark against both", how: "Ask the client; check who ranks and who AI names", done: "Names and domains listed"}
+    - {id: "0.5", task: "Set markets and languages", why: "AI answers change by country", how: "Ask the client", done: "Countries and languages written down"}
+    - {id: "0.6", task: "Collect customer voice", why: "Real questions beat guessed ones", how: "Sales calls, support tickets, reviews (theirs and competitors'), Reddit, forums", done: "At least 20 real questions or complaints in the buyer's words"}
+    - {id: "0.7", task: "Get access", why: "Most fixes and all real data need it", how: "Search Console, GA4, Bing Webmaster Tools, CMS, DNS or Cloudflare, Google Business Profile, social profiles", done: "Each item has an owner and a yes or no"}
+    - {id: "0.8", task: "Agree scope, price, timeline and what you will not do", why: "Protects you and the client", how: "Short proposal or statement of work", done: "Signed or approved in writing"}
+    - {id: "0.9", task: "Map the brand's names (entities)", why: "Each name can win or lose on its own", how: "Main brand, sub-brands, products, named features, own metrics, key people; plus the topics each should own", done: "List saved with topics per name"}
+
+- id: "1"
+  title: "Inspect (the audit)"
+  intro: "Where does the brand stand today? Go in gate order: reached, read, trusted, chosen, credited. [Guide part 4, step 1]"
+  groups:
+  - title: "1A. Business baseline"
+    items:
+    - {id: "1A.1", task: "Record 12 months of organic traffic", why: "You need the before numbers", how: "Search Console, GA4, or a suite estimate", done: "Trend saved with dates of big changes"}
+    - {id: "1A.2", task: "List top pages and top queries, branded versus unbranded", why: "Shows what already works and how much demand the brand has", how: "Search Console performance report", done: "Top 20 pages and queries saved"}
+    - {id: "1A.3", task: "Record conversions by channel", why: "Business impact is the real goal", how: "GA4", done: "Conversions per channel per month saved"}
+  - title: "1B. Crawl and index (technical SEO)"
+    items:
+    - {id: "1B.1", task: "Homepage and key pages return 200", why: "A failing page cannot rank or be cited", how: "Browser, Screaming Frog", done: "No errors on key pages"}
+    - {id: "1B.2", task: "One preferred host", why: "Duplicate versions split signals", how: "Try http, https, www and non-www", done: "All reach one version in one redirect"}
+    - {id: "1B.3", task: "robots.txt allows Googlebot and Bingbot to key pages", why: "Blocked pages are not crawled", how: "Read site.com/robots.txt; Search Console", done: "Key pages allowed"}
+    - {id: "1B.4", task: "No noindex on pages that should rank", why: "Common mistake after a redesign", how: "Screaming Frog; view source; check X-Robots-Tag header", done: "No noindex on key pages"}
+    - {id: "1B.5", task: "XML sitemap exists, listed in robots.txt, submitted", why: "Helps engines find pages", how: "Open the sitemap; Search Console and Bing", done: "Loads, lists key pages, has lastmod, submitted"}
+    - {id: "1B.6", task: "Canonical tags are correct", why: "Tells engines the preferred URL", how: "Screaming Frog", done: "Each page points to itself or the right page"}
+    - {id: "1B.7", task: "No broken internal links", why: "Wastes crawl; frustrates users", how: "Screaming Frog", done: "Internal links return 200"}
+    - {id: "1B.8", task: "No redirect chains", why: "Each hop loses time and signal", how: "Screaming Frog", done: "No internal link passes 2 or more redirects"}
+    - {id: "1B.9", task: "No orphan pages", why: "Pages without internal links are hard to find", how: "Crawl plus sitemap comparison", done: "Every sitemap page has an internal link"}
+    - {id: "1B.10", task: "Key pages within 3 clicks of the homepage", why: "Deep pages get less attention", how: "Crawl depth report", done: "Key pages at depth 3 or less"}
+    - {id: "1B.11", task: "Indexing status checked", why: "Shows what Google actually stored", how: "Search Console, Pages report", done: "No key page excluded without a reason"}
+    - {id: "1B.12", task: "Core Web Vitals on mobile", why: "Slow pages rank, convert and get fetched worse", how: "PageSpeed Insights", done: "LCP 2.5 s or less, INP 200 ms or less, CLS 0.1 or less"}
+    - {id: "1B.13", task: "Mobile friendly", why: "Google indexes the mobile version", how: "PageSpeed Insights; a real phone", done: "Viewport set, text readable, no overlap"}
+    - {id: "1B.14", task: "HTTPS everywhere", why: "Security and trust", how: "Crawl for http links and mixed content", done: "All pages on HTTPS"}
+  - title: "1C. AI access (technical AEO)"
+    items:
+    - {id: "1C.1", task: "AI search and user bots allowed", why: "They fetch pages at answer time", how: "Read robots.txt for OAI-SearchBot, ChatGPT-User, Claude-SearchBot, Claude-User, PerplexityBot, Perplexity-User", done: "All allowed"}
+    - {id: "1C.2", task: "Training-bot policy is a choice", why: "Blocking every AI bot also removes the site from live answers", how: "Check GPTBot, ClaudeBot, Google-Extended, CCBot; ask the owner", done: "Rules match what the owner wants"}
+    - {id: "1C.3", task: "No firewall block for AI bots", why: "A 403 or challenge page blocks bots even when robots.txt allows them", how: "curl with a bot user agent; Cloudflare settings; logs for proof", done: "No 403 or challenge for AI bots"}
+    - {id: "1C.4", task: "Cloudflare AI settings checked", why: "Cloudflare can block AI bots by default", how: "Cloudflare dashboard", done: "No block the owner did not choose"}
+    - {id: "1C.5", task: "Main text in raw HTML", why: "ChatGPT's crawler does not run JavaScript", how: "Turn JavaScript off; view source; search for a key sentence", done: "Key text visible without JavaScript"}
+    - {id: "1C.6", task: "No facts hidden in images, PDFs, tabs or pop-ups", why: "Hidden facts are often missed", how: "Read the page as plain text", done: "Key facts are in HTML text"}
+    - {id: "1C.7", task: "Agent readiness scan (optional)", why: "Newer signals; nice to have", how: "isitagentready.com", done: "Score noted; no critical blocker"}
+    - {id: "1C.8", task: "llms.txt (optional)", why: "Not used by major AI companies so far", how: "Open site.com/llms.txt", done: "Noted; never sold as a fix"}
+  - title: "1D. On-page SEO"
+    items:
+    - {id: "1D.1", task: "One main topic per key page; no cannibalization", why: "Two pages fighting for one keyword both lose", how: "Suite: pages ranking for the same keyword", done: "One page per main keyword"}
+    - {id: "1D.2", task: "Intent match (3 Cs)", why: "Wrong page type will not rank", how: "Search the keyword; compare type, format, angle", done: "Matches most top results"}
+    - {id: "1D.3", task: "Title tags", why: "A strong ranking and click signal", how: "Screaming Frog", done: "Unique, about 60 characters, topic included"}
+    - {id: "1D.4", task: "Meta descriptions", why: "Affects clicks (Google rewrites many)", how: "Screaming Frog", done: "Unique and descriptive"}
+    - {id: "1D.5", task: "URL slugs", why: "Readable URLs help people and bots", how: "Crawl list", done: "Short words with hyphens"}
+    - {id: "1D.6", task: "Heading order", why: "Structure helps people and AI chunking", how: "Screaming Frog; browser extension", done: "One H1; H2 and H3 in order"}
+    - {id: "1D.7", task: "Content gap against the top 3 pages", why: "Missing subtopics lose", how: "Suite content gap or page intersection", done: "Common subtopics covered or listed as tasks"}
+    - {id: "1D.8", task: "Internal links", why: "Pass authority and context", how: "Crawl; site search for related pages", done: "Key pages link to and from related pages"}
+    - {id: "1D.9", task: "Images", why: "Accessibility, image search, speed", how: "Crawl for missing alt; check file size", done: "Alt text, readable names, compressed"}
+    - {id: "1D.10", task: "Readability", why: "Easy text keeps readers and is easy to quote", how: "Hemingway App", done: "About grade 6 to 8"}
+    - {id: "1D.11", task: "Open Graph tags", why: "Better social sharing", how: "View source; sharing debuggers", done: "og:title, og:description, og:image"}
+    - {id: "1D.12", task: "Schema markup valid", why: "Helps machines read facts (hygiene, not a citation switch)", how: "Rich Results Test; Schema Markup Validator", done: "Valid types for each page type"}
+  - title: "1E. Content for AI answers"
+    items:
+    - {id: "1E.1", task: "Question headings", why: "Match how buyers ask", how: "Review the 10 to 20 key pages", done: "30% or more of H2 and H3 are real questions"}
+    - {id: "1E.2", task: "Answer first (BLUF)", why: "Humans and AI weigh the start most", how: "Read the first sentences under each heading", done: "First 1 to 2 sentences answer the heading"}
+    - {id: "1E.3", task: "Sections stand alone", why: "AI lifts chunks, not pages", how: "Cover-the-page test", done: "No 'This' or 'As mentioned' openers"}
+    - {id: "1E.4", task: "Entities named", why: "Names give AI something to connect", how: "Search for 'our tool', 'it', 'we'", done: "Brand, products, people named"}
+    - {id: "1E.5", task: "Specific facts, no vague claims", why: "Specific facts get quoted; vague ones do not", how: "Look for numbers, dates, conditions", done: "Claims carry numbers or examples"}
+    - {id: "1E.6", task: "Sources cited", why: "Trust and quotability", how: "Check claims and stats for links", done: "Every stat has a source"}
+    - {id: "1E.7", task: "Named authors with credentials", why: "E-E-A-T", how: "Check bylines and author pages", done: "Real people on key pages"}
+    - {id: "1E.8", task: "Tables in HTML; rows stand alone", why: "Tables are easy to quote", how: "View source", done: "Each row carries its own labels"}
+    - {id: "1E.9", task: "FAQ with real questions", why: "Direct answers to buyer questions", how: "Review key pages", done: "FAQ on key pages"}
+    - {id: "1E.10", task: "Freshness", why: "AI favours recently updated pages", how: "Visible dates; change history", done: "Key pages updated with real changes in 30 to 90 days"}
+    - {id: "1E.11", task: "Page formats present", why: "AI looks for these when buyers compare", how: "Site search", done: "Best-of, vs, alternatives, pricing, FAQ, facts page exist or are listed"}
+    - {id: "1E.12", task: "Original ideas carry the brand name", why: "Unnamed ideas get absorbed without credit", how: "Read key pages", done: "Own frameworks named with the brand"}
+  - title: "1F. Entity and positioning"
+    items:
+    - {id: "1F.1", task: "Organization (or Person, CollegeOrUniversity, LocalBusiness) schema", why: "Tells machines who the brand is", how: "Rich Results Test", done: "Name, URL, logo, sameAs present"}
+    - {id: "1F.2", task: "sameAs lists only own profiles", why: "Wrong links confuse the entity", how: "Open each sameAs URL", done: "No partner, client or press links"}
+    - {id: "1F.3", task: "About page complete", why: "The main source of identity facts", how: "Read it", done: "Founders, leaders, address, year, what they do"}
+    - {id: "1F.4", task: "One name form", why: "Mixed names split the entity", how: "Titles, schema, text", done: "Same spelling everywhere"}
+    - {id: "1F.5", task: "No contradictions", why: "AI picks one at random or mixes them", how: "Compare year, phone, email, address across pages", done: "All match"}
+    - {id: "1F.6", task: "Facts or FAQ page", why: "Fills gaps before AI fills them with fiction", how: "Check the site", done: "Answers the fact-sheet questions with specific values"}
+    - {id: "1F.7", task: "People pages", why: "Experts are entities too", how: "Check the site", done: "Founders and experts have bios and profile links"}
+    - {id: "1F.8", task: "Wikidata and Wikipedia status", why: "Knowledge graphs feed AI", how: "Search Wikidata; check the official site link", done: "Status noted; never edit for the client"}
+    - {id: "1F.9", task: "Lookalike brands found", why: "Name clashes steal answers", how: "Search the name; read AI answers", done: "Lookalikes listed with a plan"}
+    - {id: "1F.10", task: "Positioning on the site", why: "Consistency builds the association", how: "Homepage title and meta, About page, schema description", done: "The one-liner or its key words appear"}
+    - {id: "1F.11", task: "Positioning on every profile", why: "Ramonov: repeat it everywhere", how: "LinkedIn headline and company page, X, Instagram, YouTube, directories, podcast bios", done: "Same line everywhere"}
+    - {id: "1F.12", task: "Source-of-truth grid", why: "Shows which source spreads wrong facts", how: "8 to 10 facts x 7 sources; mark wrong cells", done: "Grid built; worst source named"}
+  - title: "1G. Authority and links"
+    items:
+    - {id: "1G.1", task: "Referring domains and domain rating against the top 3 pages", why: "Links still drive rankings and retrieval", how: "Ahrefs or Semrush", done: "Gap per target keyword known"}
+    - {id: "1G.2", task: "Link quality review", why: "Relevant, authoritative, followed, in-body links count most", how: "Backlink report", done: "Strengths and risks noted"}
+    - {id: "1G.3", task: "Spam or risk check", why: "Bad links can hurt", how: "Look for spikes and unrelated sites", done: "No unexplained spam pattern"}
+    - {id: "1G.4", task: "Unlinked mentions listed", why: "Easy outreach wins", how: "Suite mentions tool; web search", done: "List saved"}
+    - {id: "1G.5", task: "Competitor linkable points", why: "Shows why others earn links", how: "Anchor text report of competing pages", done: "Top reasons listed (stats, lists, tools)"}
+  - title: "1H. Off-site presence and reputation"
+    items:
+    - {id: "1H.1", task: "Cited domains for the category", why: "These are the sources AI trusts", how: "From the prompt runs (1K)", done: "Top 10 domains; brand present and correct or not"}
+    - {id: "1H.2", task: "Best-of lists and comparisons in the niche", why: "AI leans on them", how: "Search 'best', 'top', 'vs', 'alternatives'", done: "Pages missing the brand listed"}
+    - {id: "1H.3", task: "Review sites", why: "Trust and AI sources", how: "G2, Capterra, Trustpilot, Google, industry sites", done: "Profiles claimed, facts right, reviews answered"}
+    - {id: "1H.4", task: "Reddit and Quora threads", why: "Often cited and part of training data", how: "Search the niche; check which threads rank", done: "Relevant threads listed"}
+    - {id: "1H.5", task: "YouTube presence", why: "YouTube is heavily cited by Google AI", how: "Search niche topics on YouTube and Google", done: "Brand videos on search topics, or a gap noted"}
+    - {id: "1H.6", task: "News, podcasts, associations, directories", why: "More independent voices", how: "Web search; Listen Notes", done: "Presence noted"}
+  - title: "1I. Local presence (if relevant)"
+    items:
+    - {id: "1I.1", task: "Google Business Profile", why: "Main local source", how: "Search the business on Google Maps", done: "Right name, address, phone, category, hours, photos; reviews answered"}
+    - {id: "1I.2", task: "Bing Places and Apple Business Connect", why: "Feed Copilot, Bing and Apple Maps", how: "Search each", done: "Claimed and correct"}
+    - {id: "1I.3", task: "NAP consistency on directories", why: "Mismatches confuse engines", how: "BrightLocal or Whitespark; manual search", done: "Same name, address, phone everywhere"}
+    - {id: "1I.4", task: "Location pages", why: "Answer 'near me' and area questions", how: "Site review", done: "One useful page per location"}
+  - title: "1J. Keyword and prompt research"
+    items:
+    - {id: "1J.1", task: "Seeds and modifiers listed", why: "The start of every keyword list", how: "10 short seeds; commercial, informational and tool modifiers", done: "List saved"}
+    - {id: "1J.2", task: "Keyword ideas pulled", why: "Real searches with volume", how: "Keyword tool, phrase match with modifiers", done: "Idea list with volume"}
+    - {id: "1J.3", task: "Competitor top pages mined", why: "Finds keywords without your seeds", how: "Suite top pages report for search competitors", done: "Extra ideas added"}
+    - {id: "1J.4", task: "Each target passes the tests", why: "Only worthwhile, winnable keywords", how: "Demand, traffic potential, business potential 0 to 3, intent (3 Cs), difficulty (4 questions)", done: "Targets scored"}
+    - {id: "1J.5", task: "AI filter applied", why: "Some keywords no longer give clicks", how: "Search each; full AI answer = mention target, not click target", done: "Click and mention targets split"}
+    - {id: "1J.6", task: "Tool and transactional keywords found", why: "AI cannot replace a tool, so clicks stay", how: "Modifiers: calculator, checker, template, price, buy", done: "List saved"}
+    - {id: "1J.7", task: "Keyword map built", why: "One main keyword per page avoids cannibalization", how: "Sheet: page, main keyword, related keywords", done: "Every key page mapped; new pages listed"}
+  - title: "1K. AI visibility and Brand Truth baseline"
+    items:
+    - {id: "1K.1", task: "Build the prompt set", why: "A fixed set makes results comparable", how: "Branded, unbranded, comparison, problem, should-not-recommend; from customer voice", done: "40 to 100+ prompts, 40%+ unbranded"}
+    - {id: "1K.2", task: "Run prompts on the main platforms", why: "Each platform differs", how: "Tracker, API or logged-out browser in the right country", done: "AI Overviews, AI Mode, ChatGPT, Gemini, Perplexity, Claude covered"}
+    - {id: "1K.3", task: "Log every run", why: "Proof and repeatability", how: "Sheet: prompt, platform, date, country, search on or off, answer, cited URLs", done: "Every row complete"}
+    - {id: "1K.4", task: "Score visibility and share of voice", why: "Shows the gap against competitors", how: "Named and cited, named only, cited only, not visible", done: "Scores per platform and per topic"}
+    - {id: "1K.5", task: "Brand Truth test", why: "Wrong facts cost trust and sales", how: "About 30 fact questions, 3+ runs, graded against the fact sheet", done: "Accuracy per platform; wrong facts listed"}
+    - {id: "1K.6", task: "A person checks the grades", why: "Machine grades need review", how: "Spot-check 10%+ and every 'Invented'", done: "Reviewed and noted"}
+    - {id: "1K.7", task: "Narrative and tone", why: "Being named wrongly is a gap too", how: "Compare AI wording with the positioning", done: "Narrative gap noted"}
+  - title: "1L. Measurement setup"
+    items:
+    - {id: "1L.1", task: "Search Console and Bing Webmaster Tools verified", why: "Core data", how: "Verify both", done: "Data flowing"}
+    - {id: "1L.2", task: "GA4 AI traffic channel", why: "See AI referrals", how: "Channel group with an AI referrer regex", done: "Channel shows in reports"}
+    - {id: "1L.3", task: "'How did you hear about us?' with AI options", why: "Captures invisible AI influence", how: "Forms, sign-up, checkout", done: "Live and recorded"}
+    - {id: "1L.4", task: "Conversions tracked", why: "Business impact", how: "GA4 key events", done: "Main conversions counted"}
+    - {id: "1L.5", task: "Bing AI Performance report reviewed", why: "Shows Copilot and Bing AI citations", how: "Bing Webmaster Tools", done: "Baseline saved"}
+    - {id: "1L.6", task: "AI bot visits (optional)", why: "Shows what AI reads", how: "Server logs or Cloudflare", done: "Baseline saved"}
+  - title: "1M. Compliance basics (checks, not legal advice)"
+    items:
+    - {id: "1M.1", task: "Privacy policy and terms linked", why: "Trust and legal basics", how: "Footer", done: "Both present"}
+    - {id: "1M.2", task: "Cookie consent where required", why: "Law in many markets", how: "Visit as a new user", done: "Banner before non-essential cookies where needed"}
+    - {id: "1M.3", task: "Accessibility basics", why: "Users, law and better structure", how: "Page language, alt text, form labels, heading order, contrast, keyboard (WCAG 2.2 AA target)", done: "No basic failures"}
+    - {id: "1M.4", task: "Reviews and testimonials are real", why: "FTC rule on fake reviews", how: "Ask how reviews are gathered", done: "Real; incentives disclosed"}
+    - {id: "1M.5", task: "Paid and affiliate links disclosed", why: "Law and Google rules", how: "Check rel attributes and visible notes", done: "rel=sponsored and a visible disclosure"}
+  - title: "1N. Competitors"
+    items:
+    - {id: "1N.1", task: "Light audit of 2 to 3 competitors", why: "Shows what to copy and where to beat them", how: "Repeat 1D to 1K at small scale", done: "'They have X, we do not' list"}
+
+- id: "2"
+  title: "Diagnose"
+  intro: "Turn findings into causes and a ranked list. [Guide part 4, step 2]"
+  groups:
+  - title: "Causes and priorities"
+    items:
+    - {id: "2.1", task: "Group findings by gate", why: "Fix the earliest broken gate first", how: "Discovery, retrieval, selection, inclusion, representation", done: "Each finding has a gate"}
+    - {id: "2.2", task: "Fill the six brand gaps", why: "Shows the whole picture", how: "Visibility, narrative, topic, format, web mentions, demand", done: "Each gap has evidence and a severity"}
+    - {id: "2.3", task: "Find root causes", why: "One bad source can cause many wrong answers", how: "Group wrong answers by the source behind them", done: "Root causes named"}
+    - {id: "2.4", task: "Score every fix", why: "Do the most valuable work first", how: "Impact x confidence / effort; Truth Risk Score for wrong facts", done: "Ranked list"}
+    - {id: "2.5", task: "Label each fix Fix, Build or Influence", why: "Different owners and timelines", how: "Ahrefs' split", done: "Every fix labelled"}
+    - {id: "2.6", task: "Place the site on a maturity level (optional)", why: "Clients understand 'you are here, next is there'", how: "Invisible, Crawlable, Structured, Answer-Ready, Agent-Native", done: "Level and next level stated"}
+    - {id: "2.7", task: "Mark quick wins", why: "Early proof builds trust", how: "Pages that rank and need an update; big lists that miss the brand", done: "Quick wins flagged in the list"}
+
+- id: "3"
+  title: "Suggest"
+  intro: "Hand over a plan people can act on. [Guide part 4, step 3]"
+  groups:
+  - title: "Deliverables"
+    items:
+    - {id: "3.1", task: "One-page summary", why: "Decision makers read one page", how: "Scores, 3 to 5 findings, 5 top fixes, limits", done: "Fits on one page in plain words"}
+    - {id: "3.2", task: "Full audit with evidence", why: "Proof for every claim", how: "Screenshots, URLs, answers", done: "Every finding has evidence"}
+    - {id: "3.3", task: "Fix list with owners and 'done when'", why: "Clear tasks get done", how: "What, why, who, time, access, done when", done: "Every top fix complete"}
+    - {id: "3.4", task: "30-day and 90-day plan", why: "Sets the order and the rerun date", how: "Own site, then knowledge graph and profiles, then off-site and measurement", done: "Plan with dates and rerun questions"}
+    - {id: "3.5", task: "State the limits", why: "Honest reports keep trust", how: "What was not tested, runs made, answers vary", done: "Limits section present"}
+    - {id: "3.6", task: "List what you need from the client", why: "Unblocks the work", how: "Access, approvals, facts to confirm", done: "List sent"}
+    - {id: "3.7", task: "Start the four records", why: "Make every later report provable", how: "Visibility baseline per platform; prompt map; cited-URL log; hypothesis, test and change log", done: "All four exist"}
+
+- id: "4"
+  title: "Implement"
+  intro: "Build the fixes in order: unblock, identity, content, new pages, earn, local, measurement. [Guide part 4, step 4]"
+  groups:
+  - title: "4A. Unblock (technical)"
+    items:
+    - {id: "4A.1", task: "Allow AI search bots; fix firewall blocks", why: "Opens the door to live answers", how: "robots.txt; Cloudflare rules", done: "Retest passes"}
+    - {id: "4A.2", task: "Fix noindex, canonicals, redirects, broken links", why: "Clean crawl and index", how: "CMS; server; redirect map", done: "Recrawl clean"}
+    - {id: "4A.3", task: "Server-side render key text", why: "Bots without JavaScript can read it", how: "Developer task", done: "Raw HTML shows key text"}
+    - {id: "4A.4", task: "Speed up slow templates", why: "Better rankings and fetching", how: "Caching, image compression, developer fixes", done: "Core Web Vitals pass"}
+    - {id: "4A.5", task: "Submit sitemap; turn on IndexNow if supported", why: "Faster discovery", how: "Search Console, Bing, CMS plugin", done: "Submitted and active"}
+  - title: "4B. Identity (entity)"
+    items:
+    - {id: "4B.1", task: "Organization or Person schema with correct sameAs", why: "Clear entity", how: "JSON-LD; validate", done: "Valid and only own profiles"}
+    - {id: "4B.2", task: "About and facts pages complete", why: "Official answers to fact questions", how: "Write from the fact sheet", done: "Published and linked"}
+    - {id: "4B.3", task: "Fix contradictions and name forms", why: "One truth everywhere", how: "Edit pages", done: "Recheck passes"}
+    - {id: "4B.4", task: "Align profiles and the positioning line", why: "Consistency across the web", how: "LinkedIn, socials, directories, Google Business Profile", done: "Same line everywhere"}
+    - {id: "4B.5", task: "Prepare Wikidata or Wikipedia requests", why: "Knowledge graphs feed AI", how: "Write the request with sources; follow each site's rules", done: "Request ready; no direct client edits"}
+    - {id: "4B.6", task: "Start a claims register", why: "Keeps facts current", how: "Claim, wording, evidence URL, owner, check date, recheck trigger", done: "Register live with an owner"}
+  - title: "4C. Rewrite key pages"
+    items:
+    - {id: "4C.1", task: "Rewrite sections with the 5-part pattern", why: "Makes passages quotable", how: "Question heading, answer first, detail, evidence, no broken references", done: "Top 10 pages rewritten"}
+    - {id: "4C.2", task: "Add tables, FAQs and named authors", why: "Easy to quote; E-E-A-T", how: "Edit pages", done: "Live on key pages"}
+    - {id: "4C.3", task: "Name original frameworks with the brand", why: "Keeps credit", how: "Edit pages; reuse in social and talks", done: "Named and repeated"}
+    - {id: "4C.4", task: "Refresh with real updates", why: "Freshness", how: "New data, examples, dates", done: "Changes logged"}
+  - title: "4D. Build missing pages"
+    items:
+    - {id: "4D.1", task: "Best-of, vs and alternatives pages", why: "Match buyer comparison questions", how: "Honest tables; state own weaknesses", done: "Published for top competitors"}
+    - {id: "4D.2", task: "Pricing, FAQ, facts, glossary pages", why: "Direct answers", how: "Write from the fact sheet", done: "Published"}
+    - {id: "4D.3", task: "Tools or calculators where they fit", why: "AI cannot replace a tool, so clicks stay", how: "Developer or no-code tool", done: "Live and indexed"}
+    - {id: "4D.4", task: "Case studies with numbers", why: "Proof that AI and buyers trust", how: "Customer, baseline, change, result", done: "At least 3 published"}
+    - {id: "4D.5", task: "Original data or research", why: "The strongest link and citation asset", how: "Survey, benchmark, internal data", done: "One study published with the brand name"}
+  - title: "4E. Earn mentions (off-site)"
+    items:
+    - {id: "4E.1", task: "Prospect list by reason", why: "Personal pitches at scale", how: "Cited pages, lists missing the brand, unlinked mentions, outdated stats", done: "Segments with 10+ vetted prospects each"}
+    - {id: "4E.2", task: "Vet prospects", why: "Only worthwhile, relevant sites", how: "Live, relevant, still has the issue, has traffic, right language", done: "Vetted list"}
+    - {id: "4E.3", task: "Write one email per segment", why: "Personal without starting from zero", how: "Write to one person, then extract merge fields; subject, reason, why you, pitch, conversation starter; under 120 words", done: "Templates approved"}
+    - {id: "4E.4", task: "Test on a small batch first", why: "Proves the pitch before scaling", how: "10 to 20 prospects per segment", done: "Reply and win rate measured"}
+    - {id: "4E.5", task: "Community answers", why: "Reddit and forums are cited", how: "Honest, disclosed, useful replies", done: "Answers posted where they fit"}
+    - {id: "4E.6", task: "Video plan", why: "YouTube is heavily cited", how: "Search-hit topics; keyword title; description; timestamps; say the keyword", done: "First videos live"}
+    - {id: "4E.7", task: "PR and expert sourcing", why: "Independent voices", how: "Real news only; journalist requests; podcasts", done: "Pitches sent; results logged"}
+  - title: "4F. Local"
+    items:
+    - {id: "4F.1", task: "Clean up Google Business Profile, Bing Places, Apple", why: "Main local sources", how: "Edit listings", done: "All correct"}
+    - {id: "4F.2", task: "Fix NAP on directories", why: "Consistency", how: "BrightLocal, Whitespark or manual", done: "All match"}
+    - {id: "4F.3", task: "Review request routine", why: "Reviews drive local trust", how: "After each job or sale; never fake or buy", done: "Routine running"}
+  - title: "4G. Measurement"
+    items:
+    - {id: "4G.1", task: "Finish every 1L item", why: "Prove the work", how: "See 1L", done: "All live"}
+    - {id: "4G.2", task: "Keep a change log", why: "Shows what caused what", how: "Date, page, change, reason", done: "Every change logged"}
+
+- id: "5"
+  title: "Measure and report"
+  intro: "Did it work? Report ranges and trends. [Guide part 4, step 5]"
+  groups:
+  - title: "Monthly report"
+    items:
+    - {id: "5.1", task: "Rerun the same prompt set", why: "Comparable over time", how: "Same prompts, platforms, country", done: "New scores beside the baseline"}
+    - {id: "5.2", task: "Rerun Brand Truth (quarterly or after big fixes)", why: "Accuracy over time", how: "Same questions, 3+ runs", done: "Accuracy change reported"}
+    - {id: "5.3", task: "SEO numbers", why: "The base still matters", how: "Rankings, organic traffic, branded search, conversions", done: "Trend charts"}
+    - {id: "5.4", task: "AI referrals, bot visits, self-reported discovery", why: "Three views of AI impact", how: "GA4, logs or Cloudflare, forms", done: "All three reported"}
+    - {id: "5.5", task: "What we did, what changed, what is next", why: "Tells the story", how: "Change log plus results", done: "Report sent"}
+
+- id: "6"
+  title: "Maintain"
+  intro: "Keep it healthy. [Guide part 4, step 6]"
+  groups:
+  - title: "Cadence"
+    items:
+    - {id: "6.1", task: "Weekly: bots, site errors, AI-cited 404s", why: "Catch breakage fast", how: "robots.txt, site audit, logs; redirect invented URLs that get traffic", done: "Checked weekly"}
+    - {id: "6.2", task: "Monthly: visibility rerun, 2 to 3 page refreshes, mentions, follow-ups, report", why: "Steady progress", how: "See step 5", done: "Done monthly"}
+    - {id: "6.3", task: "Quarterly: full audit, competitor audit, Brand Truth rerun", why: "Catch bigger shifts", how: "Repeat steps 1 to 3", done: "Done quarterly"}
+    - {id: "6.4", task: "On any change: update facts page, schema, profiles, claims register", why: "Stop new wrong facts", how: "Same week as the change", done: "Updated within a week"}
+
+- id: "7"
+  title: "Improve"
+  intro: "Grow beyond the fixes. [Guide part 4, step 7]"
+  groups:
+  - title: "Growth"
+    items:
+    - {id: "7.1", task: "Expand topic coverage (fan-out)", why: "Win more of the sub-questions", how: "Map sub-questions of top prompts", done: "New sections or pages each month"}
+    - {id: "7.2", task: "Yearly original research", why: "Links, citations, brand association", how: "Survey or benchmark with the brand name", done: "Published"}
+    - {id: "7.3", task: "Video and community programs", why: "Formats AI cites", how: "Monthly plan", done: "Running"}
+    - {id: "7.4", task: "Experiments with a hypothesis log", why: "Learn what works for this brand", how: "Change one thing; compare on the same prompts", done: "Results logged"}
+    - {id: "7.5", task: "Review platform mix", why: "Buyers move between tools", how: "Ask customers; check referrals", done: "Priorities updated"}
+    - {id: "7.6", task: "Buyer journey study (advanced)", why: "Shows where the brand drops out before purchase", how: "Prompts per stage (problem, search, shortlist, compare, approve) and buyer role", done: "Drop-off stage found and fixed"}
+
+- id: "8"
+  title: "Your own practice"
+  intro: "Build yourself as an expert. [Guide parts 7 and 8]"
+  groups:
+  - title: "Skills and business"
+    items:
+    - {id: "8.1", task: "Finish the three Ahrefs courses", why: "The base method", how: "Ahrefs Academy", done: "Done; AEO exam passed"}
+    - {id: "8.2", task: "One full case study with numbers", why: "Proof wins clients", how: "Own site or a willing client", done: "Before and after published"}
+    - {id: "8.3", task: "Templates ready", why: "Speed and quality", how: "Audit, one-page summary, fix list, monthly report, outreach email", done: "All saved"}
+    - {id: "8.4", task: "SOPs for repeat tasks", why: "Systems beat heroics", how: "Write as you work", done: "SOP per phase"}
+    - {id: "8.5", task: "First automations", why: "Bridge to marketing automation", how: "Prompt runs, monthly report, 404 alerts in n8n", done: "Three automations live"}
+    - {id: "8.6", task: "Packages and prices", why: "Easy to buy", how: "Snapshot, audit, sprint, retainer", done: "Written down"}
+    - {id: "8.7", task: "Stay current", why: "AI search changes monthly", how: "Ahrefs blog, Google Search Central, vendor docs; recheck figures", done: "Monthly review habit"}

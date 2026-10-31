@@ -1,0 +1,1898 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>The AEO, GEO and SEO Field Guide</title><style>
+:root{--ink:#1d2433;--muted:#5b6475;--line:#d9dee7;--bg:#f6f7f9;--accent:#2f5bd3;--ok:#1f7a4d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{font:16px/1.6 -apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);margin:0;background:#fff}
+a{color:var(--accent)}
+.wrap{display:grid;grid-template-columns:280px minmax(0,1fr);max-width:1280px;margin:0 auto}
+nav.toc{position:sticky;top:0;height:100vh;overflow:auto;padding:24px 16px;border-right:1px solid var(--line);background:var(--bg);font-size:14px}
+nav.toc ul{list-style:none;padding-left:12px;margin:4px 0}nav.toc>ul{padding-left:0}
+nav.toc a{color:var(--ink);text-decoration:none}nav.toc a:hover{color:var(--accent)}
+main{padding:32px 40px 80px;min-width:0}
+h1{font-size:30px;line-height:1.2;margin:0 0 8px}h2{font-size:24px;margin:48px 0 8px;padding-top:8px;border-top:2px solid var(--line)}
+h3{font-size:19px;margin:30px 0 6px}h4{font-size:16px;margin:22px 0 4px}
+table{border-collapse:collapse;width:100%;margin:12px 0 18px;font-size:14.5px}
+th,td{text-align:left;vertical-align:top;padding:7px 9px;border-bottom:1px solid var(--line)}
+th{background:var(--bg);font-weight:600}
+code{background:var(--bg);padding:1px 5px;border-radius:4px;font-size:13.5px}
+blockquote{border-left:4px solid var(--line);margin:12px 0;padding:4px 14px;color:var(--muted)}
+hr{border:0;border-top:1px solid var(--line);margin:32px 0}
+.meta{color:var(--muted);font-size:14px}
+@media (max-width:900px){.wrap{display:block}nav.toc{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line)}main{padding:20px}}
+@media print{nav.toc{display:none}.wrap{display:block}main{padding:0}body{font-size:11.5px}h2{break-before:page;border-top:0}
+table{font-size:10.5px}tr,h3,h4{break-inside:avoid}a{color:var(--ink);text-decoration:none}}
+</style></head><body><div class='wrap'><nav class='toc'><b>Contents</b><div class="toc">
+<ul>
+<li><a href="#part-1-the-big-picture">Part 1. The big picture</a><ul>
+<li><a href="#1-1-three-names-one-practice">1.1 Three names, one practice</a></li>
+<li><a href="#1-2-why-it-matters-to-a-client">1.2 Why it matters to a client</a></li>
+<li><a href="#1-3-what-winning-looks-like-now">1.3 What "winning" looks like now</a></li>
+</ul>
+</li>
+<li><a href="#part-2-how-search-engines-work-the-seo-base">Part 2. How search engines work (the SEO base)</a><ul>
+<li><a href="#2-1-crawl-index-rank">2.1 Crawl, index, rank</a></li>
+<li><a href="#2-2-what-makes-a-page-rank">2.2 What makes a page rank</a></li>
+<li><a href="#2-3-one-page-ranks-for-many-keywords">2.3 One page ranks for many keywords</a></li>
+<li><a href="#2-4-things-that-do-not-work-old-seo-myths">2.4 Things that do not work (old SEO myths)</a></li>
+</ul>
+</li>
+<li><a href="#part-3-how-ai-answers-work-the-aeo-layer">Part 3. How AI answers work (the AEO layer)</a><ul>
+<li><a href="#3-1-two-sources-of-knowledge">3.1 Two sources of knowledge</a></li>
+<li><a href="#3-2-the-seven-rag-stages-where-a-brand-can-drop-out">3.2 The seven RAG stages (where a brand can drop out)</a></li>
+<li><a href="#3-3-query-fan-out">3.3 Query fan-out</a></li>
+<li><a href="#3-4-answers-are-probabilities-not-rankings">3.4 Answers are probabilities, not rankings</a></li>
+<li><a href="#3-5-what-raises-the-chance-of-being-named">3.5 What raises the chance of being named</a></li>
+<li><a href="#3-6-each-platform-is-its-own-world">3.6 Each platform is its own world</a></li>
+<li><a href="#3-7-three-kinds-of-ai-visibility">3.7 Three kinds of AI visibility</a></li>
+<li><a href="#3-8-ai-can-repeat-false-facts">3.8 AI can repeat false facts</a></li>
+</ul>
+</li>
+<li><a href="#part-3b-how-an-expert-thinks">Part 3b. How an expert thinks</a><ul>
+<li><a href="#questions-an-expert-asks-on-every-client">Questions an expert asks on every client</a></li>
+<li><a href="#common-beginner-mistakes">Common beginner mistakes</a></li>
+</ul>
+</li>
+<li><a href="#part-4-the-job-step-by-step">Part 4. The job, step by step</a><ul>
+<li><a href="#step-0-scope-the-job">Step 0. Scope the job</a></li>
+<li><a href="#step-1-inspect-the-audit">Step 1. Inspect (the audit)</a></li>
+<li><a href="#step-2-diagnose">Step 2. Diagnose</a></li>
+<li><a href="#step-3-suggest">Step 3. Suggest</a></li>
+<li><a href="#step-4-implement">Step 4. Implement</a></li>
+<li><a href="#step-5-measure-and-report">Step 5. Measure and report</a></li>
+<li><a href="#step-6-maintain">Step 6. Maintain</a></li>
+<li><a href="#step-7-improve">Step 7. Improve</a></li>
+</ul>
+</li>
+<li><a href="#part-5-different-kinds-of-clients">Part 5. Different kinds of clients</a></li>
+<li><a href="#part-6-tools-what-experts-use-and-when">Part 6. Tools: what experts use, and when</a><ul>
+<li><a href="#6-1-what-job-posts-ask-for">6.1 What job posts ask for</a></li>
+<li><a href="#6-2-tools-by-job">6.2 Tools by job</a></li>
+<li><a href="#6-3-your-starter-kit">6.3 Your starter kit</a></li>
+</ul>
+</li>
+<li><a href="#part-7-working-as-an-independent-expert">Part 7. Working as an independent expert</a><ul>
+<li><a href="#7-1-what-to-sell">7.1 What to sell</a></li>
+<li><a href="#7-2-what-to-charge-directional-only">7.2 What to charge (directional only)</a></li>
+<li><a href="#7-3-when-you-grow-into-a-team">7.3 When you grow into a team</a></li>
+<li><a href="#7-4-win-the-work">7.4 Win the work</a></li>
+</ul>
+</li>
+<li><a href="#part-8-your-path-beginner-to-expert-then-marketing-automation">Part 8. Your path: beginner to expert, then marketing automation</a><ul>
+<li><a href="#8-1-twelve-week-plan-about-5-to-8-hours-a-week">8.1 Twelve-week plan (about 5 to 8 hours a week)</a></li>
+<li><a href="#8-2-certificates">8.2 Certificates</a></li>
+<li><a href="#8-3-bridge-to-marketing-automation">8.3 Bridge to marketing automation</a></li>
+</ul>
+</li>
+<li><a href="#part-9-templates">Part 9. Templates</a><ul>
+<li><a href="#9-1-one-page-summary-for-decision-makers">9.1 One-page summary (for decision makers)</a></li>
+<li><a href="#9-2-fix-card-one-per-fix">9.2 Fix card (one per fix)</a></li>
+<li><a href="#9-3-prompt-log-one-row-per-answer">9.3 Prompt log (one row per answer)</a></li>
+<li><a href="#9-4-claims-register-one-row-per-approved-fact">9.4 Claims register (one row per approved fact)</a></li>
+<li><a href="#9-5-source-of-truth-grid">9.5 Source-of-truth grid</a></li>
+<li><a href="#9-6-change-log">9.6 Change log</a></li>
+<li><a href="#9-7-outreach-email-fill-after-you-write-one-real-email-to-one-real-person">9.7 Outreach email (fill after you write one real email to one real person)</a></li>
+<li><a href="#9-8-ga4-ai-traffic-channel">9.8 GA4 AI traffic channel</a></li>
+<li><a href="#9-9-monthly-report-outline">9.9 Monthly report outline</a></li>
+</ul>
+</li>
+<li><a href="#part-10-glossary">Part 10. Glossary</a></li>
+<li><a href="#part-11-sources">Part 11. Sources</a></li>
+</ul>
+</div>
+</nav><main><h1 id="the-aeo-geo-and-seo-field-guide">The AEO, GEO and SEO Field Guide</h1>
+<p>For Rey. Version 1, 31 Oct 2026.</p>
+<p>This is the one guide to use when you do SEO, AEO and GEO work for a client. It goes from first look to long-term care: inspect the brand, suggest fixes, build them, keep them healthy, and grow. It is written for a beginner, but it shows how an expert thinks at each step.</p>
+<p><strong>How to use it</strong></p>
+<ul>
+<li>Read parts 1 to 3 once. They give you the mental model. Without it, the checklist is just a list.</li>
+<li>Use part 4 (the job, step by step) and the separate <strong>Practitioner Checklist</strong> on every client.</li>
+<li>Use part 6 (tools) to pick the right tool for each job.</li>
+<li>Use part 8 (your path) to grow from beginner to expert, and toward marketing automation.</li>
+<li>Use part 9 (templates) to write reports, logs and emails fast.</li>
+<li>The checklist lives beside this guide as <code>checklist.html</code> (tick boxes save in your browser) and <code>checklist.pdf</code>.</li>
+</ul>
+<p><strong>About numbers in this guide.</strong> Most figures come from one company's own study (often Ahrefs). They are written as "Ahrefs reports ...". They are not laws of nature. AI search changes month to month. Check a figure again before you put it in a client report.</p>
+<hr />
+<h2 id="part-1-the-big-picture">Part 1. The big picture</h2>
+<h3 id="1-1-three-names-one-practice">1.1 Three names, one practice</h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Plain meaning</th>
+<th>Goal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SEO</strong> (search engine optimization)</td>
+<td>Make pages rank in search results (Google, Bing)</td>
+<td>Clicks from the list of blue links</td>
+</tr>
+<tr>
+<td><strong>AEO</strong> (answer engine optimization)</td>
+<td>Make AI answer tools name the brand, describe it correctly, and cite its pages</td>
+<td>Be in the answer itself</td>
+</tr>
+<tr>
+<td><strong>GEO</strong> (generative engine optimization)</td>
+<td>Almost the same as AEO. The word stresses "generative" AI models</td>
+<td>Same as AEO</td>
+</tr>
+</tbody>
+</table>
+<p>You will also see <strong>LLMO</strong> (large language model optimization) and <strong>AI SEO</strong>. They all point at the same work.</p>
+<p>The AI answer tools are called <strong>answer engines</strong>: ChatGPT, Google AI Overviews and AI Mode, Gemini, Perplexity, Claude, Microsoft Copilot, Grok, DeepSeek and others.</p>
+<p><strong>The key idea: AEO builds on SEO. It does not replace it.</strong> Many answer engines search the web while they write. They pull from pages that search engines can find and trust. A site that cannot rank, or cannot be crawled, is rarely cited. So you learn SEO first, then add AEO on top.</p>
+<h3 id="1-2-why-it-matters-to-a-client">1.2 Why it matters to a client</h3>
+<ul>
+<li><strong>Fewer clicks from search.</strong> Ahrefs reports that an AI Overview at the top of Google cut the click-through rate of the number one result by 58% (Dec 2025 data). The answer is on the page, so fewer people click.</li>
+<li><strong>Small but valuable AI traffic.</strong> Ahrefs reports that in June 2025 AI search sent only 0.5% of its visits but 12.1% of its sign-ups. That is about 23 times the conversion rate of normal search. People who arrive from an AI answer have already been told why the brand fits.</li>
+<li><strong>Most AI impact is invisible.</strong> Someone reads a brand name in ChatGPT, then types it into Google later. Analytics shows "direct" or "branded search", not "AI". So you must measure in new ways (part 4, step 5).</li>
+<li><strong>Google still sends far more traffic.</strong> Ahrefs reports that Google sends about 210 times more traffic than the top AI tools combined. Do both. Do not drop SEO for AEO.</li>
+</ul>
+<p>How an expert says it to a client: "Search is splitting into two games. In the old game you win a click. In the new game you win a mention. The same strong foundation wins both."</p>
+<h3 id="1-3-what-winning-looks-like-now">1.3 What "winning" looks like now</h3>
+<table>
+<thead>
+<tr>
+<th>Old (SEO)</th>
+<th>New (AEO)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rank position 1 to 10</td>
+<td>Named in the answer, described correctly, and cited</td>
+</tr>
+<tr>
+<td>One page, one keyword</td>
+<td>Many questions around a topic</td>
+</tr>
+<tr>
+<td>Clicks</td>
+<td>Mentions, citations, accuracy, then clicks and leads</td>
+</tr>
+<tr>
+<td>Your site does most of the work</td>
+<td>Other sites (reviews, lists, forums, news, Wikipedia, YouTube) do much of the work</td>
+</tr>
+<tr>
+<td>Stable rankings</td>
+<td>Answers that change from run to run</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="part-2-how-search-engines-work-the-seo-base">Part 2. How search engines work (the SEO base)</h2>
+<h3 id="2-1-crawl-index-rank">2.1 Crawl, index, rank</h3>
+<ol>
+<li><strong>Crawl.</strong> Programs called <strong>crawlers</strong> (also bots or spiders) start from known pages and follow links to find more pages.</li>
+<li><strong>Index.</strong> The search engine stores a copy of each page it finds and understands. The <strong>index</strong> is that big library.</li>
+<li><strong>Rank.</strong> When someone searches, the engine picks the most useful pages from the index and orders them.</li>
+</ol>
+<p>If a page is not crawled, it cannot be indexed. If it is not indexed, it cannot rank. If it cannot rank, most AI tools that use search will not find it either. That is why <strong>technical SEO comes first</strong>.</p>
+<h3 id="2-2-what-makes-a-page-rank">2.2 What makes a page rank</h3>
+<p>No one outside Google knows the exact formula. Google has given clues, and these factors are accepted by most experts:</p>
+<ul>
+<li><strong>Search intent match.</strong> The page gives the type of answer people want. Look at the top results to learn this. Ahrefs teaches the <strong>3 Cs</strong>:</li>
+<li><strong>Content type:</strong> blog post, product page, category page, video, tool.</li>
+<li><strong>Content format:</strong> how-to, list, comparison, review, opinion.</li>
+<li><strong>Content angle:</strong> the hook, for example "for beginners", "2026", "cheap".</li>
+<li><strong>Backlinks.</strong> A <strong>backlink</strong> is a link from another site to yours. Google treats it like a vote. Links from relevant, trusted pages count more. Google's original <strong>PageRank</strong> formula judges a page by the number and quality of pages that link to it.</li>
+<li><strong>Content depth.</strong> The page answers the question fully. Depth is not length. A page about turning off a phone can be short and still win.</li>
+<li><strong>E-E-A-T.</strong> Experience, expertise, authoritativeness and trustworthiness. This is Google's idea of quality: real authors, real experience, real evidence, a trusted site.</li>
+<li><strong>Page experience.</strong> Fast, mobile friendly, secure (HTTPS), no annoying pop-ups.</li>
+<li><strong>Topical authority.</strong> A site that covers one subject well often beats a bigger general site. Ahrefs shows a plumbing site outranking much stronger sites for "how to unclog a toilet".</li>
+</ul>
+<h3 id="2-3-one-page-ranks-for-many-keywords">2.3 One page ranks for many keywords</h3>
+<p>Ahrefs reports that the top page for a query ranks, on average, for about 1,000 other keywords in the top 10. So you do not stuff one exact phrase. You cover a topic well, and the page wins the many ways people ask about it.</p>
+<h3 id="2-4-things-that-do-not-work-old-seo-myths">2.4 Things that do not work (old SEO myths)</h3>
+<ul>
+<li>Repeating the exact keyword many times (keyword stuffing).</li>
+<li>A fixed keyword count or a minimum word count.</li>
+<li>Buying links. It breaks Google's rules and can get a site penalized. Ahrefs asked 250 sites and found an average price of about $353 per link. They did not buy any.</li>
+<li>Hundreds of thin pages made only to catch keywords.</li>
+</ul>
+<hr />
+<h2 id="part-3-how-ai-answers-work-the-aeo-layer">Part 3. How AI answers work (the AEO layer)</h2>
+<h3 id="3-1-two-sources-of-knowledge">3.1 Two sources of knowledge</h3>
+<p>An AI model knows a brand in two ways:</p>
+<ol>
+<li><strong>Training memory.</strong> What the model learned from a huge copy of the web, books, Reddit, YouTube transcripts and more. It is fixed until the next training round, often months later. If a brand launched last month, the memory does not know it.</li>
+<li><strong>Live retrieval.</strong> The tool searches the web while it answers, reads some pages, and writes from them. This is called <strong>RAG</strong> (retrieval-augmented generation). It changes as soon as the web changes.</li>
+</ol>
+<p>Why it matters: you can change live retrieval in weeks (fix pages, earn mentions on cited pages). You change training memory only slowly, by being mentioned widely and consistently for a long time.</p>
+<p>A real example from Brandleap's Mauna Loa audit: models were right 24% of the time from memory alone, and 72% of the time with search on. Fixing what search finds moves answers now. Memory catches up later.</p>
+<h3 id="3-2-the-seven-rag-stages-where-a-brand-can-drop-out">3.2 The seven RAG stages (where a brand can drop out)</h3>
+<p>From Rodrigo Stockebrand's book <em>Answer Engine Optimization</em> (O'Reilly, 2026):</p>
+<ol>
+<li><strong>User query.</strong> The question as typed.</li>
+<li><strong>Query understanding.</strong> The tool rewrites the question and splits it into several smaller searches. This is <strong>query fan-out</strong>.</li>
+<li><strong>Retrieval.</strong> It pulls candidate pages or passages from an index.</li>
+<li><strong>Ranking and reranking.</strong> It orders candidates by relevance and trust.</li>
+<li><strong>Context assembly.</strong> It packs the best passages into the model's working memory.</li>
+<li><strong>Generation.</strong> The model writes the answer.</li>
+<li><strong>Post-processing.</strong> Citations, safety checks, formatting.</li>
+</ol>
+<p>A brand can fail at any stage. A page that is never fetched fails at stage 3. A page that is fetched but vague fails at stage 4 or 6.</p>
+<p>The same book gives a simpler content view, the <strong>Five Gates</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Gate</th>
+<th>Question</th>
+<th>Typical fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Discovery</td>
+<td>Does the engine know the page exists?</td>
+<td>Crawl access, sitemap, internal links, IndexNow</td>
+</tr>
+<tr>
+<td>Retrieval</td>
+<td>Does the page come back for the right question?</td>
+<td>Topic coverage, the words buyers use, SEO</td>
+</tr>
+<tr>
+<td>Selection</td>
+<td>Is it chosen over competing passages?</td>
+<td>Clear answer first, specifics, evidence, authority</td>
+</tr>
+<tr>
+<td>Inclusion</td>
+<td>Does the passage make it into the final answer?</td>
+<td>Self-contained sections, quotable facts</td>
+</tr>
+<tr>
+<td>Representation</td>
+<td>Are the facts right, and is the brand credited?</td>
+<td>Facts page, consistency across the web, entity markup</td>
+</tr>
+</tbody>
+</table>
+<p>Expert habit: find the gate where the brand drops out, and fix that gate first.</p>
+<h3 id="3-3-query-fan-out">3.3 Query fan-out</h3>
+<p>When someone asks "plan a 5-day trip to Japan in November", the AI runs many hidden searches: best area to stay in Tokyo, weather in Kyoto in November, is the rail pass worth it, and so on. Ahrefs quotes research by Seer Interactive that an average prompt triggers about 9 to 11 fan-out searches, some up to 28.</p>
+<p>What it means for you:
+- A page that covers only the basics loses to a page that covers the whole topic.
+- Ahrefs reports that over 95% of fan-out queries have zero search volume. Do not chase them as keywords. Use them to see <strong>which subtopics</strong> the AI thinks matter.</p>
+<h3 id="3-4-answers-are-probabilities-not-rankings">3.4 Answers are probabilities, not rankings</h3>
+<p>Ask the same question five times and you can get five different answers. The model adds some randomness, and the sources it finds change. Ahrefs reports that over 45% of AI Overview citations change when the overview refreshes, which happens about every two days on average.</p>
+<p>So an expert never says "we rank number 2 in ChatGPT". An expert says "we were named in 34% of 300 answers across 3 runs". This is called <strong>AI visibility</strong> or <strong>share of voice</strong>, not ranking.</p>
+<h3 id="3-5-what-raises-the-chance-of-being-named">3.5 What raises the chance of being named</h3>
+<p>From Ahrefs' studies and the other sources:</p>
+<ul>
+<li><strong>Consensus.</strong> When many sources say the same thing about a brand, AI repeats it. Ahrefs reports that branded web mentions had the strongest link to AI Overview visibility in a study of 75,000 brands (correlation 0.664), stronger than backlinks or domain rating. Mentions on pages with many links did even better (0.7).</li>
+<li><strong>Third-party pages.</strong> Lists ("best X"), comparisons, reviews, Reddit threads, YouTube videos, Wikipedia, news. Ramonov says most brand mentions in AI come from sites the brand does not own.</li>
+<li><strong>Freshness.</strong> Ahrefs reports AI-cited content is on average 25.7% fresher than what ranks in normal search. In one Ahrefs study of ChatGPT's top-cited pages that showed a date, 76.4% had been updated in the last 30 days (Sept 2025, 564 of 1,000 pages had a visible date). Refresh with real changes, not just a new date.</li>
+<li><strong>Authority and SEO.</strong> Pages that rank well in Google have a head start, especially for AI Overviews and Perplexity. But the link is weakening. Ahrefs once found 76% of AI Overview citations came from top-10 pages; a newer study put it near 38%. And 14% of cited pages did not rank in the top 100 at all.</li>
+<li><strong>Format.</strong> For "best ..." questions in ChatGPT, Ahrefs found 43.8% of cited pages were list posts (Dec 2025, 26,283 URLs). Comparisons, original data and clear how-tos also do well.</li>
+<li><strong>Specific facts.</strong> Numbers, names, dates. Vague claims give the AI nothing to quote.</li>
+</ul>
+<p>What does <strong>not</strong> seem to matter:
+- <strong>Length.</strong> Ahrefs reports almost no link between word count and AI Overview citations (correlation 0.04). Over half of cited pages had under 1,000 words.
+- <strong>llms.txt.</strong> A proposed file that summarizes a site for AI. No major AI company says it uses it. Fine to add, never sell it as a fix.
+- <strong>Schema as a magic switch.</strong> Structured data helps machines read facts. The evidence that it raises AI citations is mixed. Treat it as hygiene.</p>
+<h3 id="3-6-each-platform-is-its-own-world">3.6 Each platform is its own world</h3>
+<p>Ahrefs looked at the top 50 most-cited domains in AI Overviews, ChatGPT and Perplexity: only 7 appeared on all three (14% overlap).</p>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Where it gets facts</th>
+<th>Tends to favour (Ahrefs data)</th>
+<th>Check first</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Google AI Overviews</td>
+<td>Google's index + model</td>
+<td>Established, authoritative sites; YouTube (about 5.6% of citations); Reddit</td>
+<td>Normal SEO health, Search Console</td>
+</tr>
+<tr>
+<td>Google AI Mode</td>
+<td>Google's index + model</td>
+<td>YouTube most cited; cites Quora far more than AI Overviews. Only 13.7% citation overlap with AI Overviews, though answers are 86% similar</td>
+<td>Same as above, plus video and forums</td>
+</tr>
+<tr>
+<td>ChatGPT</td>
+<td>Memory + web search (Bing data has fed it)</td>
+<td>Big publishers; median domain rating of top-cited pages is 90; only 8 to 10% overlap with Google's top 10</td>
+<td>OAI-SearchBot allowed; Bing Webmaster Tools; mentions on major publications</td>
+</tr>
+<tr>
+<td>Perplexity</td>
+<td>Live search on almost every question</td>
+<td>Closest to Google: 28.6% of citations rank in Google's top 10</td>
+<td>PerplexityBot allowed; fresh, dated, answer-first pages</td>
+</tr>
+<tr>
+<td>Claude</td>
+<td>Memory + web search when on</td>
+<td>Not studied as much</td>
+<td>Claude-SearchBot and Claude-User allowed</td>
+</tr>
+<tr>
+<td>Microsoft Copilot and Bing</td>
+<td>Bing index + model</td>
+<td></td>
+<td>Bing Webmaster Tools (it has an AI Performance report since Feb 2026), IndexNow, Bing Places</td>
+</tr>
+<tr>
+<td>Gemini</td>
+<td>Google's index + model</td>
+<td></td>
+<td>Same as Google</td>
+</tr>
+</tbody>
+</table>
+<p>Expert rule: <strong>fix the shared base first</strong> (access, clean facts, answer-first content, trusted third-party sources). Then tune for one platform where the data shows a gap.</p>
+<h3 id="3-7-three-kinds-of-ai-visibility">3.7 Three kinds of AI visibility</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>What happens</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cited and linked</td>
+<td>The answer links to the brand's page</td>
+<td>Direct traffic; easy to measure</td>
+</tr>
+<tr>
+<td>Mentioned, not linked</td>
+<td>The brand name appears, no link</td>
+<td>Word of mouth at scale; people search the name later; trains future models</td>
+</tr>
+<tr>
+<td>Not visible</td>
+<td>Not in the answer</td>
+<td>The gap to fix</td>
+</tr>
+</tbody>
+</table>
+<p>Ahrefs reports that only about 28% of AI mentions carry a link. It varies by platform: Perplexity about 52%, AI Mode about 37%, ChatGPT about 27%, AI Overviews about 11%. So counting only clicks misses most of the value.</p>
+<h3 id="3-8-ai-can-repeat-false-facts">3.8 AI can repeat false facts</h3>
+<p>Ahrefs created a fake brand, planted three conflicting stories about it (a blog, Reddit, Medium), then asked eight AI tools. Gemini and Perplexity repeated the false facts in 37 to 39% of answers. ChatGPT stayed under 7% and cited the brand's official FAQ in 84% of answers.</p>
+<p>The lesson: <strong>"When AI has to choose between vague truth and specific fiction, it tends to choose the specific fiction."</strong> Fill every fact gap with a specific, official page.</p>
+<hr />
+<h2 id="part-3b-how-an-expert-thinks">Part 3b. How an expert thinks</h2>
+<p>These are the habits that separate an expert from someone who runs a tool and pastes the report.</p>
+<ol>
+<li><strong>Business first.</strong> A keyword or prompt matters only if winning it helps the business. Ahrefs scores <strong>business potential</strong> 0 to 3: 3 if the brand's product is the natural answer, 0 if it has nothing to do with the business.</li>
+<li><strong>Intent decides the page.</strong> Before you write, look at what already wins (the 3 Cs). Do not try to rank a blog post where Google shows only shops.</li>
+<li><strong>Fix blockers before polish.</strong> Order: can it be reached, then read, then trusted, then chosen. A beautiful page behind a robots block earns nothing.</li>
+<li><strong>Measure before you change.</strong> Take a dated <strong>baseline</strong> (scores, answers, rankings, traffic). Without it, you cannot prove your work helped.</li>
+<li><strong>One answer is an anecdote.</strong> Repeat AI tests (3 or more runs), keep the question set fixed, and report ranges. The book calls this the <strong>confidence ladder</strong>.</li>
+<li><strong>The web decides who the brand is.</strong> Your client's site is one voice. Lists, reviews, forums, news and knowledge graphs are many voices. Work on both.</li>
+<li><strong>Specific beats vague.</strong> Named people, products, places, numbers and dates. "Cut editing time by 40% in our 2026 test of 120 videos" beats "a great tool".</li>
+<li><strong>Think in passages.</strong> AI reads chunks, not whole pages. Every section should make sense alone, with the answer first.</li>
+<li><strong>Know what is proven.</strong> Sources disagree on llms.txt, schema, word count, LinkedIn headlines. Say what is proven, what is likely, and what is a guess.</li>
+<li><strong>Prioritize by impact, confidence and effort.</strong> Quick, safe, high-impact fixes first. Big bets get a test first (a small batch, then the full roll-out).</li>
+<li><strong>Separate the scores.</strong> Readiness, visibility, accuracy and SEO strength measure different things. A single blended number hides the cause.</li>
+<li><strong>Honest limits.</strong> Every report says what was not tested, how many runs were made, and that AI answers vary.</li>
+<li><strong>Play the long game, ethically.</strong> No bought links, no fake reviews, no spam, no editing Wikipedia for a client. These shortcuts burn the brand and you.</li>
+<li><strong>Write for humans.</strong> AI learned from what humans find useful. Content that serves a reader well is the content AI wants to cite.</li>
+<li><strong>Systems beat heroics.</strong> Experts use repeatable steps (SOPs), templates, checklists and automation. That is also your bridge to marketing automation.</li>
+</ol>
+<h3 id="questions-an-expert-asks-on-every-client">Questions an expert asks on every client</h3>
+<ol>
+<li>What does a win look like for this business, in money or leads?</li>
+<li>Who is the buyer, and what do they ask before they buy?</li>
+<li>Can engines reach and read the site at all?</li>
+<li>What does the web say about this brand today, and who is saying it?</li>
+<li>Where does the brand drop out: not found, not chosen, or described wrongly?</li>
+<li>Which single change would move the most answers or rankings?</li>
+<li>How will we know, in 90 days, that it worked?</li>
+</ol>
+<h3 id="common-beginner-mistakes">Common beginner mistakes</h3>
+<table>
+<thead>
+<tr>
+<th>Mistake</th>
+<th>Do this instead</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Running one AI prompt and reporting it as the result</td>
+<td>Fixed prompt set, 3+ runs, report ranges</td>
+</tr>
+<tr>
+<td>Starting with content before checking crawl and bot access</td>
+<td>Unblock first</td>
+</tr>
+<tr>
+<td>Chasing search volume</td>
+<td>Check traffic potential, business potential and intent</td>
+</tr>
+<tr>
+<td>Writing long pages to "be thorough"</td>
+<td>Answer first, then depth; length set by the topic</td>
+</tr>
+<tr>
+<td>Selling llms.txt or schema as the fix for AI visibility</td>
+<td>Present them as hygiene; the big levers are access, content, consistency and mentions</td>
+</tr>
+<tr>
+<td>Stating a tool's or study's number as fact</td>
+<td>"Ahrefs reports ..." with the date</td>
+</tr>
+<tr>
+<td>Fixing each wrong AI answer one by one</td>
+<td>Find the source behind many wrong answers and fix that</td>
+</tr>
+<tr>
+<td>Spamming outreach or forums</td>
+<td>Personal, segmented outreach; honest, disclosed answers</td>
+</tr>
+<tr>
+<td>No baseline, no change log</td>
+<td>Record before you change; log every change</td>
+</tr>
+<tr>
+<td>Reports full of jargon</td>
+<td>Plain words and business impact for decision makers</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="part-4-the-job-step-by-step">Part 4. The job, step by step</h2>
+<p>Every client goes through the same eight steps. The <strong>Practitioner Checklist</strong> has one box for every task below.</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Name</th>
+<th>Question it answers</th>
+<th>Typical time (small site)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Scope</td>
+<td>What does the client need, and what can I promise?</td>
+<td>1 to 2 hours</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Inspect</td>
+<td>Where does the brand stand today?</td>
+<td>1 to 3 days</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Diagnose</td>
+<td>Why is it there, and what matters most?</td>
+<td>Half a day</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Suggest</td>
+<td>What should we do, in what order?</td>
+<td>Half a day to 1 day</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Implement</td>
+<td>Build the fixes</td>
+<td>Weeks to months</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Measure</td>
+<td>Did it work?</td>
+<td>Monthly</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Maintain</td>
+<td>Keep it healthy</td>
+<td>Weekly to quarterly</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Improve</td>
+<td>Grow beyond the fixes</td>
+<td>Ongoing</td>
+</tr>
+</tbody>
+</table>
+<h3 id="step-0-scope-the-job">Step 0. Scope the job</h3>
+<p>Goal: agree on what you will do, for whom, and how success is measured, before you touch anything.</p>
+<p>Collect:
+- <strong>The business.</strong> What they sell, to whom, where, how they make money, average deal size. This sets business potential for every keyword and prompt.
+- <strong>The brand.</strong> Exact name and every spelling, domain, parent company, sub-brands, products, founders and leaders, address, founding year. These become the <strong>fact sheet</strong>.
+- <strong>Positioning.</strong> The one thing they want to be known for, in one line, plus 3 proof points. Ramonov's pattern: "the one thing" + proof + proof + proof. Example: "Number one AI educator for entrepreneurs. 3M followers. Forbes 30 Under 30."
+- <strong>Competitors.</strong> 3 to 5 that buyers really compare them with. Also the <strong>search competitors</strong>: sites that rank for the client's topics, even if they sell nothing.
+- <strong>Markets.</strong> Countries and languages. AI answers change by country.
+- <strong>Customer voice.</strong> Sales call notes, support tickets, reviews (theirs and competitors'), Reddit threads. Ramonov: "Don't guess. Go look." This is where real buyer questions come from.
+- <strong>Access.</strong> Google Search Console, Google Analytics 4, Bing Webmaster Tools, website admin (CMS), DNS or Cloudflare, Google Business Profile, social profiles. Note who owns each one.
+- <strong>Budget and limits.</strong> Tool budget, approval rules, legal rules (for example claims about competitors), brand voice.</p>
+<ul>
+<li><strong>Map the brand's names (entities).</strong> List every name the brand goes by: the main brand, sub-brands, product names, named features, its own metrics or methods, and the people tied to it (founders, experts). Ahrefs' example for itself: Ahrefs; Site Explorer, Brand Radar; Domain Rating; Tim Soulo, Patrick Stox. Each name can be tested on its own later. For each, write the topics and qualities people should link to it ("affordable", "enterprise", "for engineers").</li>
+</ul>
+<p>Expert tip: write down <strong>what you will not do</strong> (for example, no link buying, no Wikipedia edits). It protects you and the client.</p>
+<h3 id="step-1-inspect-the-audit">Step 1. Inspect (the audit)</h3>
+<p>Inspect in this order. It follows the gates: reach, read, trust, chosen, credited.</p>
+<h4 id="1a-business-baseline">1A. Business baseline</h4>
+<ul>
+<li>Organic traffic trend for 12 months (Search Console, GA4, or an SEO tool estimate).</li>
+<li>Top pages and top queries. Branded versus unbranded queries.</li>
+<li>Conversions and where they come from.</li>
+</ul>
+<p>Why: you need the "before" numbers. A traffic drop may be a season, a site change, or an algorithm update. Note the dates of big changes.</p>
+<h4 id="1b-crawl-and-index-technical-seo">1B. Crawl and index (technical SEO)</h4>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Why</th>
+<th>How</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Homepage and key pages load (HTTP 200)</td>
+<td>If a page fails, nothing else matters</td>
+<td>Browser, crawler</td>
+</tr>
+<tr>
+<td>One preferred version of the site (https, with or without www)</td>
+<td>Duplicates split signals</td>
+<td>Type all four versions; each should redirect once to one</td>
+</tr>
+<tr>
+<td>robots.txt does not block important pages</td>
+<td><strong>robots.txt</strong> is a file at <code>site.com/robots.txt</code> that tells bots where they may go</td>
+<td>Read it; test in Search Console</td>
+</tr>
+<tr>
+<td>No <code>noindex</code> on pages that should rank</td>
+<td>A <strong>noindex</strong> tag tells search engines not to store the page. Common after a redesign</td>
+<td>Crawler, view page source</td>
+</tr>
+<tr>
+<td>XML sitemap exists, is listed in robots.txt, and is submitted</td>
+<td>A <strong>sitemap</strong> lists the pages you want found</td>
+<td>Open <code>site.com/sitemap.xml</code>; Search Console</td>
+</tr>
+<tr>
+<td>Canonical tags are correct</td>
+<td>A <strong>canonical</strong> tag names the preferred URL when pages are similar</td>
+<td>Crawler</td>
+</tr>
+<tr>
+<td>No broken internal links, no redirect chains</td>
+<td>Broken links waste crawl and frustrate people</td>
+<td>Crawler</td>
+</tr>
+<tr>
+<td>No orphan pages</td>
+<td>An <strong>orphan</strong> page has no internal links pointing to it, so bots and people cannot find it</td>
+<td>Crawler plus sitemap</td>
+</tr>
+<tr>
+<td>Key pages within 3 clicks of the homepage</td>
+<td>Deep pages get crawled and valued less</td>
+<td>Crawler (crawl depth)</td>
+</tr>
+<tr>
+<td>Pages indexed in Search Console</td>
+<td>Shows what Google actually stored</td>
+<td>Search Console, Pages report</td>
+</tr>
+<tr>
+<td>Speed and Core Web Vitals</td>
+<td>Slow pages rank and convert worse; AI fetchers may drop slow pages</td>
+<td>PageSpeed Insights. Targets: LCP 2.5 s or less, INP 200 ms or less, CLS 0.1 or less</td>
+</tr>
+<tr>
+<td>Mobile friendly</td>
+<td>Google indexes the mobile version</td>
+<td>PageSpeed Insights, a phone</td>
+</tr>
+<tr>
+<td>HTTPS everywhere</td>
+<td>Security and trust</td>
+<td>Browser padlock, crawler</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1c-ai-access-technical-aeo">1C. AI access (technical AEO)</h4>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Why</th>
+<th>How</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI search bots allowed in robots.txt</td>
+<td>These bots fetch pages at answer time: OAI-SearchBot and ChatGPT-User (OpenAI), Claude-SearchBot and Claude-User (Anthropic), PerplexityBot and Perplexity-User. Block them and the site drops out of live answers</td>
+<td>Read robots.txt line by line</td>
+</tr>
+<tr>
+<td>Training bots: a deliberate choice</td>
+<td>GPTBot, ClaudeBot, Google-Extended and CCBot collect training data. Blocking them is a valid business choice. Blocking everything is the "full lockdown paradox": you vanish from live answers too</td>
+<td>Ask the owner what they want</td>
+</tr>
+<tr>
+<td>No firewall block</td>
+<td>A security service can return a 403 (forbidden) or a challenge page to bots even when robots.txt allows them. Ahrefs reports about 5.9% of 140 million sites block GPTBot</td>
+<td>Request the page with an AI bot user agent; check Cloudflare settings. Real proof is in server logs</td>
+</tr>
+<tr>
+<td>Cloudflare AI settings</td>
+<td>Cloudflare can add AI blocks to robots.txt by default</td>
+<td>Cloudflare dashboard</td>
+</tr>
+<tr>
+<td>Text is in the raw HTML</td>
+<td>ChatGPT's crawler does not run JavaScript. If the text appears only after scripts run, it sees an empty page</td>
+<td>Turn JavaScript off in the browser, or view the raw source; search for a key sentence</td>
+</tr>
+<tr>
+<td>No hidden facts</td>
+<td>Facts inside images, PDFs only, tabs, accordions or pop-ups are often missed</td>
+<td>Look at the page as plain text</td>
+</tr>
+<tr>
+<td>Agent readiness (optional)</td>
+<td>Newer signals: llms.txt, Markdown versions of pages, agent protocols</td>
+<td>isitagentready.com (Cloudflare)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1d-on-page-seo">1D. On-page SEO</h4>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Good looks like</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Each key page has one main topic</td>
+<td>No two pages fight for the same main keyword (this fight is called <strong>cannibalization</strong>)</td>
+</tr>
+<tr>
+<td>Title tag</td>
+<td>Unique, about 60 characters or less, includes the topic or a close variant</td>
+</tr>
+<tr>
+<td>Meta description</td>
+<td>Unique summary. Ahrefs found Google rewrites about 63% of them, so do not spend hours, but do write them</td>
+</tr>
+<tr>
+<td>URL slug</td>
+<td>Short, readable, hyphens: <code>/best-golf-balls</code> not <code>/p?id=4482</code></td>
+</tr>
+<tr>
+<td>Headings</td>
+<td>One H1; H2 and H3 in order</td>
+</tr>
+<tr>
+<td>Intent match</td>
+<td>Same content type, format and angle as most top results</td>
+</tr>
+<tr>
+<td>Content gap</td>
+<td>Covers the subtopics the top 3 pages cover</td>
+</tr>
+<tr>
+<td>Internal links</td>
+<td>Related pages link to each other with clear anchor text (the clickable words)</td>
+</tr>
+<tr>
+<td>Images</td>
+<td>Descriptive file names, alt text (a short description for screen readers and search), compressed files</td>
+</tr>
+<tr>
+<td>Readability</td>
+<td>Short sentences and paragraphs, about grade 6 to 8. Hemingway App is a free check</td>
+</tr>
+<tr>
+<td>Open Graph tags</td>
+<td>Control how the page looks when shared on social media</td>
+</tr>
+<tr>
+<td>Schema markup</td>
+<td>Valid structured data for the page type (more in 1F)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1e-content-for-ai-answers">1E. Content for AI answers</h4>
+<p>Pick the 10 to 20 most important pages. For each, check:</p>
+<ul>
+<li><strong>Question headings.</strong> H2 and H3 phrased the way buyers ask ("How much does X cost?" beats "Pricing").</li>
+<li><strong>Answer first.</strong> The first one or two sentences under each heading answer it. This is <strong>BLUF</strong>: bottom line up front. Humans and AI both weigh the start of a passage most.</li>
+<li><strong>Atomic sections.</strong> Each section makes sense alone. No "As mentioned above" or "This" with no subject. Test: cover the page except one paragraph. Can it answer a question by itself?</li>
+<li><strong>Entities.</strong> Name the brand, products, people and places instead of "our tool" or "it".</li>
+<li><strong>Specifics.</strong> Numbers, dates, conditions, examples. No empty sales words ("world-class", "seamless").</li>
+<li><strong>Evidence.</strong> Sources linked, named experts, first-party data.</li>
+<li><strong>Author.</strong> A real person with credentials.</li>
+<li><strong>Tables.</strong> Real HTML tables. Each row should make sense alone ("Teams of 5 to 20, posting to 8 platforms: $49 a month").</li>
+<li><strong>FAQ.</strong> Real buyer questions with direct answers.</li>
+<li><strong>Freshness.</strong> Visible update date, and real updates in the last 30 to 90 days on key pages.</li>
+<li><strong>Formats.</strong> Does the site have the pages AI looks for: "best X for Y", "brand vs competitor", "competitor alternatives", pricing, FAQ, a facts page, tools or calculators?</li>
+<li><strong>Original ideas carry the brand name.</strong> Ahrefs advice: AI tends to absorb a new idea without credit. Name it ("the Ahrefs content scoring matrix") and repeat it in many places.</li>
+</ul>
+<h4 id="1f-entity-and-positioning">1F. Entity and positioning</h4>
+<p>An <strong>entity</strong> is a thing with stable facts: the company, its parent, people, products, places. AI and Google's <strong>Knowledge Graph</strong> store entities and how they connect.</p>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Good looks like</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Organization schema (or Person, CollegeOrUniversity, LocalBusiness)</td>
+<td>Name, legal name, URL, logo, <code>sameAs</code></td>
+</tr>
+<tr>
+<td><code>sameAs</code> links</td>
+<td>Only the brand's own official profiles. Never partners, clients or press articles</td>
+</tr>
+<tr>
+<td>About page</td>
+<td>Founders, leaders, address, founding year, what the brand does</td>
+</tr>
+<tr>
+<td>One name form</td>
+<td>Same spelling in titles, schema and text</td>
+</tr>
+<tr>
+<td>No contradictions</td>
+<td>Year, phone, email, address match on every page</td>
+</tr>
+<tr>
+<td>Facts or FAQ page</td>
+<td>Answers the fact-sheet questions with specific values</td>
+</tr>
+<tr>
+<td>People pages</td>
+<td>Founders and experts with a bio, photo, links</td>
+</tr>
+<tr>
+<td>Wikidata and Wikipedia</td>
+<td>Do they exist, and do they link to the official site? Never edit them yourself for a client; prepare a request with sources</td>
+</tr>
+<tr>
+<td>Lookalike brands</td>
+<td>Search the name: other companies, places or products with a similar name. Mauna Loa lost questions to the volcano</td>
+</tr>
+<tr>
+<td>Positioning everywhere</td>
+<td>The one-liner on the homepage title or meta, About page, schema description, LinkedIn headline and company page, other socials, directories, podcast bios</td>
+</tr>
+<tr>
+<td><strong>Source-of-truth grid</strong></td>
+<td>8 to 10 core facts as rows; sources as columns (own site, Wikipedia, Wikidata, LinkedIn, business listings, top third-party pages, AI answers). Mark every wrong cell red. Fix the source that corrects the most answers first</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1g-authority-and-links">1G. Authority and links</h4>
+<ul>
+<li>Referring domains (number of other sites linking in) and domain rating, against the pages that rank top 3 for target keywords.</li>
+<li>Link quality: <strong>relevant</strong> (same topic), <strong>authoritative</strong> (strong page), <strong>followed</strong> (no <code>nofollow</code>, <code>ugc</code> or <code>sponsored</code> tag), descriptive anchor, placed in the body text.</li>
+<li>Bad signs: sudden spikes of spammy links, links from unrelated foreign sites, keyword-stuffed anchors.</li>
+<li><strong>Unlinked mentions:</strong> pages that name the brand without linking. Easy outreach wins.</li>
+</ul>
+<h4 id="1h-off-site-presence-and-reputation">1H. Off-site presence and reputation</h4>
+<ul>
+<li>Which domains AI cites for the category (from step 1K).</li>
+<li>"Best X" lists, comparisons and reviews in the niche: is the brand there, and correct?</li>
+<li>Review sites (G2, Capterra, Trustpilot, Google reviews, industry sites).</li>
+<li>Reddit and Quora threads that rank or get cited.</li>
+<li>YouTube: does the brand have videos on topics people search?</li>
+<li>News, podcasts, industry associations, directories.</li>
+</ul>
+<h4 id="1i-local-presence-if-the-brand-serves-an-area">1I. Local presence (if the brand serves an area)</h4>
+<ul>
+<li>Google Business Profile: correct name, address, phone (<strong>NAP</strong>), category, hours, photos, reviews answered.</li>
+<li>Bing Places and Apple Business Connect.</li>
+<li><strong>Citations</strong> (in local SEO this means listings of NAP on directories): Better Business Bureau, Yelp, industry directories. All must match exactly.</li>
+<li>Location pages on the site.</li>
+</ul>
+<h4 id="1j-keyword-and-prompt-research">1J. Keyword and prompt research</h4>
+<p>This is where you find what people search and ask, and which of those searches are worth winning. Do it before you finish the prompt set in 1K.</p>
+<p><strong>Find ideas.</strong>
+1. List 10 <strong>seed keywords</strong>: short, broad terms for the niche (for example "golf clubs", "golf balls"). You can ask an AI assistant to suggest seeds and modifiers for the business.
+2. Add <strong>modifiers</strong>. Commercial ones: best, top, vs, review, alternative, price. Informational ones: how, what, why, guide, tutorial. Tool ones: calculator, checker, generator, template, planner.
+3. Put seeds and modifiers into a keyword tool (phrase match) to get real keywords with volume.
+4. Look at the <strong>top pages of search competitors</strong>. They often rank for keywords that do not contain your seeds.
+5. Add the real questions from customer voice (step 0).</p>
+<p><strong>Judge each keyword. Ahrefs' checklist, plus the AI filter:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Question</th>
+<th>How</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Search demand</td>
+<td>Do people search for it?</td>
+<td>Search volume (for example 300+ a month for a niche, lower for B2B)</td>
+</tr>
+<tr>
+<td>Traffic potential</td>
+<td>How much traffic does the top page get from all its keywords?</td>
+<td>Look at the top page's total traffic. It beats search volume as a guide, because not every search leads to a click</td>
+</tr>
+<tr>
+<td>Business potential</td>
+<td>Would ranking for it help the business?</td>
+<td>Score 0 to 3. 3: the product is the natural answer. 0: no link to the business</td>
+</tr>
+<tr>
+<td>Intent</td>
+<td>Can we make the kind of page that wins?</td>
+<td>The 3 Cs of the top results</td>
+</tr>
+<tr>
+<td>Difficulty</td>
+<td>Can we win in a reasonable time?</td>
+<td>Four questions: do some top pages miss the intent? Can we earn more quality links than the top pages? Is our site's authority in the same range? Are we as topically focused? More "yes" = better chance</td>
+</tr>
+<tr>
+<td><strong>AI filter</strong></td>
+<td>Does the AI answer fully satisfy the searcher?</td>
+<td>Search it. If an AI Overview answers it completely, a click is unlikely. Treat it as a <strong>mention target</strong> (aim to be named in the answer), not a <strong>click target</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Ahrefs reports AI Overviews appear on about 21% of keywords overall, but on about 58% of question keywords, and nearly all of them are informational. Tool and transactional searches mostly show no AI Overview, so the click is still there to win.</p>
+<p><strong>Output:</strong> a keyword map (one main keyword per page, plus related keywords), a list of mention targets, and a list of new pages to build.</p>
+<p><strong>Prompts are different from keywords.</strong> People type full sentences with context into AI tools ("I run a small agency; which tool should I pick?"). Every person phrases it differently, and the AI fans each one out into many sub-searches. So you do not chase single prompts. You build visibility across the whole topic, and you test with a fixed set of prompts that stands for the topic.</p>
+<h4 id="1k-ai-visibility-and-brand-truth-baseline">1K. AI visibility and Brand Truth baseline</h4>
+<ol>
+<li><strong>Build the question set.</strong> 40 to 100 or more prompts across:
+   - Branded: "What is [brand]?", "Who owns [brand]?", "[brand] pricing".
+   - Unbranded category: "best [category] for [buyer]".
+   - Comparison: "[brand] vs [competitor]", "[competitor] alternatives".
+   - Problem: the buyer's pain in their own words.
+   - Should-not-recommend: cases where the brand is a bad fit (tests honesty).
+   Keep at least 40% unbranded. That is where new buyers are.</li>
+<li><strong>Run it</strong> on Google AI Overviews, AI Mode, ChatGPT, Gemini, Perplexity and Claude, at least. Use a tracking tool, an API, or a logged-out browser set to the right country. Record platform, date, country, search on or off, the answer, and every cited URL.</li>
+<li><strong>Score visibility.</strong> Per answer: named and cited, named only, cited only, or not visible. Share of voice against competitors. One public formula (Brandleap's free index): 50 points if named and cited, 30 if named only, 20 if cited only, per engine; average over prompts.</li>
+<li><strong>Brand Truth.</strong> About 30 fact questions, 3 or more runs. Grade each answer against the fact sheet: Correct, Partial, Out of date, Wrong, Invented, No answer. A person checks the grades. Brandleap's human reviewers changed 30 of 352 machine grades, so do not skip this.</li>
+<li><strong>Narrative.</strong> Does AI describe the brand the way the brand wants (the positioning words)? Is the tone positive?</li>
+</ol>
+<h4 id="1l-measurement-setup">1L. Measurement setup</h4>
+<ul>
+<li>Search Console and Bing Webmaster Tools verified.</li>
+<li>GA4 has an "AI traffic" channel group (regex on referrers such as chatgpt.com, chat.openai.com, perplexity.ai, gemini.google.com, copilot.microsoft.com, claude.ai, deepseek.com).</li>
+<li>Forms ask "How did you hear about us?" with AI options.</li>
+<li>Conversions are tracked.</li>
+<li>Optional: server logs or Cloudflare analytics for AI bot visits.</li>
+</ul>
+<h4 id="1m-compliance-basics-checks-not-legal-advice">1M. Compliance basics (checks, not legal advice)</h4>
+<ul>
+<li>HTTPS, privacy policy, terms, cookie consent where the law needs it.</li>
+<li>Accessibility basics (WCAG 2.2 AA is the usual target): page language set, image alt text, form labels, heading order, contrast, keyboard use.</li>
+<li>Reviews and testimonials are real; incentives disclosed (the US FTC has a rule on fake reviews and testimonials).</li>
+<li>Paid and affiliate links disclosed and marked <code>rel="sponsored"</code>.</li>
+</ul>
+<h4 id="1n-competitors">1N. Competitors</h4>
+<p>Run a light version of 1D to 1K on 2 or 3 competitors. Note what they have that the client lacks: formats, mentions, links, videos, reviews, entity facts.</p>
+<h3 id="step-2-diagnose">Step 2. Diagnose</h3>
+<p>Turn findings into causes and a ranked list.</p>
+<ol>
+<li><strong>Group by gate.</strong> Discovery, retrieval, selection, inclusion, representation. Fix the earliest broken gate first.</li>
+<li><strong>Use Ahrefs' six brand gaps</strong> to see the whole picture:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Gap</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Visibility</td>
+<td>Are we named less than competitors?</td>
+</tr>
+<tr>
+<td>Narrative</td>
+<td>Does AI describe us the wrong way?</td>
+</tr>
+<tr>
+<td>Topic</td>
+<td>Which topics are linked to competitors, not us?</td>
+</tr>
+<tr>
+<td>Format</td>
+<td>Which formats get cited that we do not make (video, lists, comparisons)?</td>
+</tr>
+<tr>
+<td>Web mentions</td>
+<td>Which sites mention competitors but not us?</td>
+</tr>
+<tr>
+<td>Demand</td>
+<td>Do enough people search for our brand at all?</td>
+</tr>
+</tbody>
+</table>
+<ol start="3">
+<li><strong>Find root causes.</strong> Many wrong answers often trace back to one source: an old press release, a wrong directory listing, a Wikipedia line, a lookalike brand. Fix the cause, not each symptom.</li>
+<li><strong>Score each fix.</strong> Simple formula: priority = impact × confidence ÷ effort. Brandleap's Truth Risk Score for wrong facts: (severity × 0.6 + imminence × 0.4) × 10, where severity is the harm if repeated and imminence is how likely it is repeated now. Critical 80+, High 65+, Moderate 50+, Watch below 50.</li>
+<li><strong>Label each fix:</strong> Fix (improve what exists), Build (make something new), or Influence (earn mentions off-site). This is Ahrefs' split.</li>
+<li><strong>Place the site on a maturity scale</strong> (optional, useful for clients). Brandleap uses five levels: Invisible (engines cannot reach or read it), Crawlable, Structured, Answer-Ready, Agent-Native. A site cannot skip a level. It gives the client a simple "you are here, next is there".</li>
+</ol>
+<p>Quick wins first: a page that already ranks and only needs a content update, or a big list that names every competitor but your client.</p>
+<h3 id="step-3-suggest">Step 3. Suggest</h3>
+<p>What an expert hands over:</p>
+<ol>
+<li><strong>One-page summary.</strong> Scores, the 3 to 5 biggest findings, the 5 fixes that matter most, and the limits of the test.</li>
+<li><strong>The full audit.</strong> Every check with evidence (screenshots, URLs, answers).</li>
+<li><strong>A prioritized fix list.</strong> For each fix: what, why, who does it, time, access needed, and "done when".</li>
+<li><strong>A 30-day and 90-day plan.</strong> A common shape:
+   - Week 1: claims register (approved facts with sources) and baseline.
+   - Week 2: fix identity contradictions, canonical pages, official profiles.
+   - Week 3: publish evidence pages for the top 3 gaps; update the facts page.
+   - Week 4: rerun the same tests; list what is still missing.
+   - Days 30 to 90: own site first, then the knowledge graph and profiles, then off-site evidence and measurement. Technical before content; earned (off-site) work runs all the time.</li>
+<li><strong>What you need from them.</strong> Access, approvals, facts to confirm.</li>
+</ol>
+<p>Keep <strong>four records</strong> for every client (Brandleap's practice). They make every later report provable:
+1. A visibility baseline per platform (dated).
+2. The prompt and question map.
+3. A log of every URL the AI tools cited.
+4. A hypothesis, test and change log.</p>
+<p>Write it for the reader. A marketing lead wants plain words and business impact. A developer wants exact steps and files.</p>
+<h3 id="step-4-implement">Step 4. Implement</h3>
+<p>Work in this order unless the data says otherwise.</p>
+<p><strong>4A. Unblock (technical).</strong> Allow AI search bots; fix firewall blocks; fix noindex, canonicals, redirects, broken links, sitemap; server-side render key text; speed up the slowest templates. Submit the sitemap; turn on IndexNow if the site supports it (it tells Bing and others about changes at once).</p>
+<p><strong>4B. Identity (entity).</strong> Organization or Person schema with correct <code>sameAs</code>; About and facts pages; one name form; fix contradictions; align profiles (LinkedIn, socials, directories, Google Business Profile); write the positioning one-liner everywhere; prepare Wikidata or Wikipedia change requests with sources (never edit for a client).</p>
+<p><strong>4C. Rewrite key pages (content).</strong> Use the 5-part section pattern from the book:
+1. Heading phrased like the buyer's question.
+2. The direct answer in the first one or two sentences.
+3. Detail: numbers, conditions, examples.
+4. Evidence: a source, a named expert, first-party data.
+5. No references that break when the chunk stands alone.</p>
+<p>Match the page to the <strong>query type</strong> (from the book):
+- <strong>Simple factual</strong> ("When was X founded?"): one crisp, clearly stated fact.
+- <strong>Multistep</strong> ("Which X fits a team of 10 with a $5,000 budget?"): well-linked pages that cover each part.
+- <strong>Agentic</strong> (the AI plans and acts, for example compares options or books): structured, complete data such as prices, specs, availability.</p>
+<p><strong>4D. Build missing pages.</strong> "Best X for Y", "brand vs competitor", "competitor alternatives", pricing, FAQ, facts page, glossary, tools or calculators (AI cannot replace a tool, so these keep their clicks), case studies with numbers. Original data or research is the strongest asset: it earns links and citations.</p>
+<p><strong>4E. Earn mentions (off-site).</strong> Ahrefs' three tiers:
+1. <strong>Third-party editorial:</strong> lists, reviews, comparisons, industry publications, YouTube reviews. Hardest and most valuable.
+2. <strong>Communities:</strong> Reddit, Quora, niche forums. Answer real questions honestly, disclose who you are, never spam.
+3. <strong>Own properties:</strong> YouTube channel, podcast, LinkedIn, other sites the brand owns.</p>
+<p>How to do outreach well (Ahrefs Advanced Link Building):
+- <strong>Content decides the pitch.</strong> You need a real reason to contact someone: an outdated stat on their page, a missing option on their list, a wrong fact about the brand.
+- <strong>Seed and lookalike prospects.</strong> Find pages that link or mention for a specific reason (the "linkable point"). Then find more pages like them with the same footprint.
+- <strong>Segment by reason.</strong> Each segment gets its own email. Personal, but at scale.
+- <strong>Vet.</strong> Real site, relevant, still has the issue, has traffic, right language.
+- <strong>Contact the right person.</strong> Authors and editors convert best. Sam Oh's campaign: authors 7.56%, editors 7.55%, generic inboxes 4%, other titles 1.64%.
+- <strong>Test on a small batch first</strong> (the <strong>blitz list</strong>), then scale if it works.
+- <strong>Write to one person as if to a friend, then turn it into a template.</strong> Short. One real benefit for their readers. One honest line about your weaknesses. Ask for feedback or a mention, not just a link.
+- Hybrid outreach typically converts at 5 to 12% (Sam Oh's experience).
+- <strong>Only pitch your best work.</strong> A plain "what is X" page gives no reason to link.</p>
+<p>The shape of a good outreach email (Ahrefs SEO course):</p>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>Job</th>
+<th>Example (guest post pitch)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Subject line</td>
+<td>Get it opened, honestly</td>
+<td>"New data: best balls for high handicappers"</td>
+</tr>
+<tr>
+<td>Opening</td>
+<td>Say why you are writing</td>
+<td>"You have guides on golf balls for kids and for distance, but none for high handicappers."</td>
+</tr>
+<tr>
+<td>Why you</td>
+<td>Qualify yourself and justify the ask</td>
+<td>"I am a high handicapper and tested 20 balls on a launch monitor."</td>
+</tr>
+<tr>
+<td>The pitch</td>
+<td>The ask plus the value for their readers</td>
+<td>"I would like to write that guide for you, with all the data, to help your buyers choose."</td>
+</tr>
+<tr>
+<td>Close</td>
+<td>Start a conversation, not a hard sell</td>
+<td>"Would that be useful?"</td>
+</tr>
+</tbody>
+</table>
+<p>Three ways to approach outreach: <strong>shotgun</strong> (same email to everyone: fast, but spammy and burns the brand), <strong>sniper</strong> (fully personal, few targets: slow, best links), and <strong>hybrid</strong> (personal per segment: Sam Oh's recommendation for most work).</p>
+<p>Also:
+- <strong>Digital PR:</strong> press releases only for real news (launch, key hire, award, milestone, partnership). Syndicated copies count as one source.
+- <strong>Expert sourcing:</strong> answer journalist requests fast, short, with credentials first. (HARO, the service named in the Ahrefs course, has changed hands since the course was recorded. Check which journalist request services are active before you rely on one.)
+- <strong>Podcasts and YouTube:</strong> each appearance leaves show notes and a transcript that AI can read. For YouTube: keyword in the title, a real description, timestamps, and say the keyword out loud. Ahrefs reports YouTube mentions had the strongest link to ChatGPT visibility of the factors it studied (0.737).</p>
+<p><strong>4F. Local.</strong> Clean up Google Business Profile, Bing Places, Apple; fix NAP on directories; start a review request routine.</p>
+<p><strong>4G. Measurement.</strong> Set up everything in 1L if missing.</p>
+<p>Rules while implementing:
+- Change one thing at a time where you can, and log it (date, page, change). The <strong>change log</strong> is how you later prove what worked.
+- Get approval for facts, claims about competitors, and anything legal.
+- Never fake freshness (changing only the date).</p>
+<h3 id="step-5-measure-and-report">Step 5. Measure and report</h3>
+<p>Three ways to see AI impact (Ahrefs):
+1. <strong>Referral traffic</strong> from AI tools in GA4. It undercounts: some tools strip the referrer.
+2. <strong>Bot activity:</strong> which pages AI bots fetch. Pages fetched often by answer-time bots are likely being cited.
+3. <strong>Self-reported:</strong> "How did you hear about us?" Often the clearest proof.</p>
+<p>Plus:
+- AI visibility and share of voice, rerun on the same question set.
+- Brand Truth accuracy, rerun.
+- Rankings, organic traffic, branded search trend (Search Console), conversions.
+- Bing Webmaster Tools AI Performance report: how often Copilot and Bing AI cite the site's pages.</p>
+<p>Report ranges and trends, not single numbers. Show what changed, what you did, and what you will do next.</p>
+<h3 id="step-6-maintain">Step 6. Maintain</h3>
+<table>
+<thead>
+<tr>
+<th>Every</th>
+<th>Do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Week</td>
+<td>Check robots.txt and bot access; scan the site audit for new errors; watch for AI-cited URLs that return 404 (AI sometimes invents URLs; Ahrefs reports AI tools send visitors to 404 pages 2.87 times as often as Google). Redirect the ones that get traffic</td>
+</tr>
+<tr>
+<td>Month</td>
+<td>Rerun the visibility check; refresh 2 or 3 key pages with real updates; check mentions (new, lost, wrong); follow up outreach; report</td>
+</tr>
+<tr>
+<td>Quarter</td>
+<td>Full audit; competitor audit; Brand Truth rerun with 3+ runs; update the plan</td>
+</tr>
+<tr>
+<td>On any change</td>
+<td>New product, leader, address, price or name: update the facts page, schema, profiles and the claims register the same week</td>
+</tr>
+</tbody>
+</table>
+<h3 id="step-7-improve">Step 7. Improve</h3>
+<p>When the basics are done, grow:
+- <strong>Topic coverage:</strong> build out the sub-questions of the top buyer questions (fan-out).
+- <strong>Original research:</strong> a yearly survey or benchmark with the brand's name on it.
+- <strong>Video program:</strong> one search-hit video a month.
+- <strong>Digital PR program:</strong> steady, newsworthy stories.
+- <strong>Community presence:</strong> helpful, disclosed answers where buyers ask.
+- <strong>Experiments:</strong> pick a page, change one thing, compare before and after on the same questions. Keep a hypothesis log.
+- <strong>New platforms:</strong> check where your client's buyers actually ask (for example Perplexity for researchers, Copilot for corporate users).
+- <strong>Buyer journey study (advanced).</strong> Test whether the brand survives as a buyer moves from first research to purchase. Brandleap's On study used the stages Trigger, Explore, Compare, Buy, Own, and found the brand named in 15% of Explore answers but 1% of Buy answers. For B2B, use problem, solution search, shortlist, comparison, approval, and the roles in the buying team.</p>
+<hr />
+<h2 id="part-5-different-kinds-of-clients">Part 5. Different kinds of clients</h2>
+<p>The steps stay the same. The focus changes.</p>
+<table>
+<thead>
+<tr>
+<th>Client type</th>
+<th>Focus</th>
+<th>Watch out for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>B2B company or SaaS</strong></td>
+<td>Comparisons, alternatives, pricing clarity, integrations, case studies with numbers, review sites (G2, Capterra), analyst and industry lists, LinkedIn</td>
+<td>Long buying cycles: measure leads and self-reported discovery, not only traffic</td>
+</tr>
+<tr>
+<td><strong>Industrial or distributor (many brands, territories)</strong></td>
+<td>One clear entity per company and its relationship to the parent; location and territory pages; product and manufacturer pages; spec and "or equal" content engineers search for; tools such as calculators; trade show content; industry associations; Google Business Profile per location</td>
+<td>Name confusion between sister companies; facts locked in PDFs and images</td>
+</tr>
+<tr>
+<td><strong>University or school</strong></td>
+<td>Program pages with facts in text (not graphics); faculty as Person entities with profiles; research and patents with good metadata; rankings and admissions sites; student forums and Reddit; accessibility</td>
+<td>Many sub-brands; facts in PDFs; outdated program info on third-party sites</td>
+</tr>
+<tr>
+<td><strong>Local business</strong></td>
+<td>Google Business Profile, reviews, NAP consistency, local directories, location pages, Bing Places, Apple</td>
+<td>Duplicate listings, old addresses, wrong categories</td>
+</tr>
+<tr>
+<td><strong>Online store</strong></td>
+<td>Product schema, product feeds (Google Merchant Center), reviews, "best X" lists, comparison pages, ChatGPT shopping</td>
+<td>Thin product copy copied from the maker</td>
+</tr>
+<tr>
+<td><strong>Person or personal brand</strong></td>
+<td>Person schema, one positioning line on LinkedIn and every profile, podcasts, speaking, bylined articles, Wikidata (if notable)</td>
+<td>Same-name people; old job titles on profiles</td>
+</tr>
+</tbody>
+</table>
+<p>The book has extra checklists for healthcare, legal, ecommerce, financial services, B2B and SaaS, local and publishing. Health, money and legal topics (called <strong>YMYL</strong>, "your money or your life") need extra care with expert authors and sources.</p>
+<hr />
+<h2 id="part-6-tools-what-experts-use-and-when">Part 6. Tools: what experts use, and when</h2>
+<h3 id="6-1-what-job-posts-ask-for">6.1 What job posts ask for</h3>
+<ul>
+<li><strong>Google Analytics is the most-named tool in SEO job posts.</strong> Semrush studied 3,900 Indeed SEO listings (Nov 2025): Google Analytics appeared in 33.5% of senior listings and 47.7% of other roles; Semrush in 6.1% and 9.6%. Semrush ran the study, so read it with that in mind.</li>
+<li><strong>Semrush and Ahrefs are the standard paid suites.</strong> A separate analysis of 6,000+ SEO postings calls them "the undisputed kings of the SEO toolkit".</li>
+<li><strong>Screaming Frog and Search Console are table stakes.</strong> US job guides list a keyword or link tool plus a technical crawler as the baseline.</li>
+<li><strong>AEO and GEO posts on Upwork (Oct 2026)</strong> ask for Google Search Console, GA4, Screaming Frog, Ahrefs, Semrush and Bing Webmaster Tools; name AI trackers like Profound, Peec or Otterly "or similar"; and very often ask for <strong>manual prompt testing</strong>: a baseline of 20 to 30 buyer prompts across ChatGPT, Perplexity, Gemini and AI Overviews, with a repeatable log of prompts, platforms, dates, mentions and citations.</li>
+</ul>
+<p>So the market wants: the free Google and Bing tools, one big suite, a crawler, a way to track AI answers, and a clean, repeatable method. The method matters more than the brand of tool.</p>
+<h3 id="6-2-tools-by-job">6.2 Tools by job</h3>
+<p>Prices change often. They are entry prices seen in 2026 and are only a guide. Check the vendor's page before you buy.</p>
+<p><strong>Free core (every client, always)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Use it for</th>
+<th>When</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Google Search Console</td>
+<td>What Google indexes; queries, clicks, impressions; errors; sitemap submission. AI Overviews and AI Mode traffic is counted inside normal web search there</td>
+<td>Day one of every job; weekly</td>
+</tr>
+<tr>
+<td>Google Analytics 4 (GA4)</td>
+<td>Traffic, sources, conversions; the AI traffic channel group</td>
+<td>Day one; monthly reports</td>
+</tr>
+<tr>
+<td>Google Tag Manager</td>
+<td>Adding tracking without editing code</td>
+<td>Setup</td>
+</tr>
+<tr>
+<td>Bing Webmaster Tools</td>
+<td>Bing index (which feeds Copilot and has fed ChatGPT search); IndexNow; the <strong>AI Performance</strong> report (public preview since Feb 2026) shows how often Copilot and Bing AI cite the site's pages</td>
+<td>Day one; monthly</td>
+</tr>
+<tr>
+<td>Google Business Profile, Bing Places, Apple Business Connect</td>
+<td>Local listings</td>
+<td>Local clients</td>
+</tr>
+<tr>
+<td>PageSpeed Insights and Lighthouse</td>
+<td>Speed and Core Web Vitals</td>
+<td>Audit; after big changes</td>
+</tr>
+<tr>
+<td>Rich Results Test and Schema Markup Validator</td>
+<td>Check structured data</td>
+<td>After any schema change</td>
+</tr>
+<tr>
+<td>Google Trends</td>
+<td>Seasonality and rising topics</td>
+<td>Keyword research</td>
+</tr>
+<tr>
+<td>Looker Studio</td>
+<td>Free dashboards from GA4, Search Console, Sheets</td>
+<td>Client reporting</td>
+</tr>
+<tr>
+<td>isitagentready.com (Cloudflare)</td>
+<td>Quick agent-readiness scan</td>
+<td>Technical AEO audit</td>
+</tr>
+<tr>
+<td>Hemingway App</td>
+<td>Readability grade</td>
+<td>Content reviews</td>
+</tr>
+<tr>
+<td>Wikidata</td>
+<td>Check entity facts</td>
+<td>Entity audit</td>
+</tr>
+<tr>
+<td>Ahrefs Webmaster Tools (free for sites you own)</td>
+<td>Site audit and backlinks for verified sites</td>
+<td>When the client verifies the site</td>
+</tr>
+</tbody>
+</table>
+<p><strong>All-in-one SEO suites (pick one; most agencies use Semrush or Ahrefs)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Strength</th>
+<th>When</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Semrush</td>
+<td>Keywords, competitors, site audit, rank tracking, local add-on, AI Visibility Toolkit (sold alone at about $99 a month per domain on annual billing, per one review)</td>
+<td>Keyword research, competitor research, audits</td>
+</tr>
+<tr>
+<td>Ahrefs</td>
+<td>Backlink data, Keywords Explorer, Content Explorer (prospecting), Site Explorer; Brand Radar for AI visibility</td>
+<td>Link research, outreach prospecting, content gaps, AI mentions</td>
+</tr>
+<tr>
+<td>Moz Pro, SE Ranking</td>
+<td>Cheaper all-in-ones</td>
+<td>Small budgets</td>
+</tr>
+<tr>
+<td>Semdash</td>
+<td>Budget suite (keywords, backlinks, some AI Overview data); Buzz Insider uses it</td>
+<td>Small budgets</td>
+</tr>
+<tr>
+<td>Similarweb</td>
+<td>Market and traffic estimates</td>
+<td>Competitive market sizing</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Crawlers (technical audits)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>When</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Screaming Frog SEO Spider (free up to 500 URLs; paid licence above)</td>
+<td>Every technical audit; custom searches across many pages (for example "does each page still mention X")</td>
+</tr>
+<tr>
+<td>Sitebulb</td>
+<td>Visual audits with explanations; good for client-friendly technical reports</td>
+</tr>
+<tr>
+<td>Screaming Frog Log File Analyser</td>
+<td>Reading server logs to see real bot visits, including AI bots</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Rank tracking</strong>: AccuRanker, SE Ranking, or the tracker inside Semrush or Ahrefs. Use for weekly keyword positions once targets are set.</p>
+<p><strong>Content optimization</strong></p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>When</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Surfer, Clearscope, Frase, MarketMuse</td>
+<td>Briefs and content scoring against what ranks. Useful for topic coverage. Do not write to a "score"; write for the reader</td>
+</tr>
+<tr>
+<td>Claude, ChatGPT</td>
+<td>Drafting, outlines, rewriting to the answer-first pattern, schema drafts. A person always edits and fact-checks</td>
+</tr>
+</tbody>
+</table>
+<p><strong>AI visibility tracking (AEO-specific)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Notes (from 2026 reviews; check current terms)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Manual testing</td>
+<td>Free. Logged-out browser, right country, fixed prompt list, a spreadsheet. Every Upwork AEO post expects you can do this</td>
+</tr>
+<tr>
+<td>Otterly.AI</td>
+<td>Cheapest entry (about $29 a month for 15 prompts, per one review)</td>
+</tr>
+<tr>
+<td>Peec AI</td>
+<td>Monitoring-first; about $95 a month for 50 prompts (sources differ)</td>
+</tr>
+<tr>
+<td>Profound</td>
+<td>Enterprise leader; custom pricing, often $399+ a month</td>
+</tr>
+<tr>
+<td>Scrunch, AthenaHQ</td>
+<td>Optimization platforms; AthenaHQ has a free tier</td>
+</tr>
+<tr>
+<td>Semrush AI Visibility Toolkit, Ahrefs Brand Radar</td>
+<td>Add-ons for teams already on those suites</td>
+</tr>
+<tr>
+<td>ZeroRank</td>
+<td>Tracks up to 17 AI tools with country per prompt; from $39 a month; has an API</td>
+</tr>
+<tr>
+<td>DataForSEO</td>
+<td>Pay-per-use API data (AI Overviews, AI Mode, ChatGPT and Gemini answers, LLM mentions, keywords, backlinks). For people who build their own tracker; $50 minimum top-up</td>
+</tr>
+</tbody>
+</table>
+<p>Expert view: compare tools on <strong>prompt count, engines covered, country setting, and whether you get the full answer text and cited URLs</strong>, not on the headline price.</p>
+<p><strong>Local SEO</strong></p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>When</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BrightLocal</td>
+<td>All-in-one for agencies: listings, Google Business Profile audits, grid rank tracking, reviews, white-label reports</td>
+</tr>
+<tr>
+<td>Whitespark</td>
+<td>Citation finding and building; local rank tracking</td>
+</tr>
+<tr>
+<td>Moz Local, Semrush Local</td>
+<td>Automatic listing sync</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Links, outreach and PR</strong></p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>When</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ahrefs or Semrush backlinks, Majestic</td>
+<td>Link research and prospecting</td>
+</tr>
+<tr>
+<td>Hunter.io, NeverBounce</td>
+<td>Find and verify contact emails</td>
+</tr>
+<tr>
+<td>BuzzStream, Pitchbox, Respona</td>
+<td>Run outreach campaigns and follow-ups</td>
+</tr>
+<tr>
+<td>Journalist request services (for example Qwoted, Featured, Source of Sources)</td>
+<td>Expert quotes in media. Check which ones are active</td>
+</tr>
+<tr>
+<td>Listen Notes</td>
+<td>Find podcasts to pitch</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Technical AEO and bots</strong>: Cloudflare dashboard (AI crawler controls and bot analytics), server logs, <code>curl</code> (fetch a page as a bot from the command line), browser with JavaScript turned off.</p>
+<p><strong>Reporting</strong>: Looker Studio (free), AgencyAnalytics or Whatagraph (paid, white-label), Google Sheets.</p>
+<p><strong>Automation (your bridge to marketing automation)</strong>: n8n, Make, Zapier; the Search Console API, GA4 Data API, DataForSEO, Semrush API; Apify (scraping); Slack for alerts.</p>
+<p><strong>Project management</strong>: Notion, Trello or Asana, with SOPs (step-by-step instructions for repeat tasks) and a Kanban board (columns: brainstorm, prospecting, vetting, outreach, done).</p>
+<h3 id="6-3-your-starter-kit">6.3 Your starter kit</h3>
+<table>
+<thead>
+<tr>
+<th>Budget</th>
+<th>Stack</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0</td>
+<td>Search Console, GA4, Bing Webmaster Tools, PageSpeed Insights, Rich Results Test, Screaming Frog free, Ahrefs Webmaster Tools (client sites), manual AI prompt testing in a sheet, Looker Studio, Hemingway</td>
+</tr>
+<tr>
+<td>About $100 to $150 a month</td>
+<td>Add one suite at entry level (Semrush or Ahrefs, or a budget suite) and one cheap AI tracker (Otterly or ZeroRank Starter)</td>
+</tr>
+<tr>
+<td>Agency</td>
+<td>Full suite, Screaming Frog licence, a local tool, an outreach tool, an AI tracker with more prompts, white-label reporting</td>
+</tr>
+</tbody>
+</table>
+<p>Rule: <strong>one tool per job</strong>. Many tools averaging different numbers is a common mess. Buzz Insider named this pain on 20 Oct.</p>
+<hr />
+<h2 id="part-7-working-as-an-independent-expert">Part 7. Working as an independent expert</h2>
+<h3 id="7-1-what-to-sell">7.1 What to sell</h3>
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>What the client gets</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Free or low-cost snapshot</td>
+<td>A short AI visibility check on 20 to 100 prompts plus top technical blockers</td>
+<td>Brandleap gives a free AI Visibility Index and a free technical report as lead offers</td>
+</tr>
+<tr>
+<td>Full audit</td>
+<td>Steps 1 to 3: audit, diagnosis, fix list, 30/90-day plan</td>
+<td>Brandleap sells a custom Brand Truth audit at $299</td>
+</tr>
+<tr>
+<td>Implementation sprint</td>
+<td>Step 4 for a set scope (for example technical + entity + 5 page rewrites)</td>
+<td>Fixed price per scope</td>
+</tr>
+<tr>
+<td>Retainer</td>
+<td>Steps 5 to 7 monthly: tracking, refreshes, new pages, outreach, report</td>
+<td>The steady income</td>
+</tr>
+<tr>
+<td>Training</td>
+<td>Teach a client's team the method</td>
+<td>Good for agencies</td>
+</tr>
+</tbody>
+</table>
+<h3 id="7-2-what-to-charge-directional-only">7.2 What to charge (directional only)</h3>
+<ul>
+<li>Upwork's own guide puts beginners at about $10 to $25 an hour and lists a median of about $15 to $35 an hour for SEO experts on its cost page.</li>
+<li>Other 2026 rate guides put experienced freelancers at about $60 to $150 an hour, and senior experts with case studies at $200 or more.</li>
+<li>One analysis says AEO and GEO add about 15 to 25% to retainer prices since 2024, because the skill is scarce.</li>
+</ul>
+<p>Treat these as rough. Your price rises with <strong>proof</strong>: case studies with before-and-after numbers.</p>
+<h3 id="7-3-when-you-grow-into-a-team">7.3 When you grow into a team</h3>
+<p>Sam Oh's advice from the Advanced Link Building course: give each person one stage, so each gets very good at it.
+- <strong>Prospector:</strong> finds opportunities and pitch angles. Needs SEO knowledge, research skill and creativity. Often doubles as project manager.
+- <strong>Vetter:</strong> checks each prospect against a written standard. Needs attention to detail; no SEO background needed.
+- <strong>Outreach manager:</strong> writes and sends emails and keeps relationships. Needs writing and people skills.</p>
+<p>Support them with five things: clear roles, shared goals (for example new referring domains a month to money pages), SOPs, a project board, and a shared sheet for campaign data.</p>
+<h3 id="7-4-win-the-work">7.4 Win the work</h3>
+<ul>
+<li>Answer the post's exact ask. Upwork AEO posts want a baseline of buyer prompts, a repeatable tracking method, technical and schema fixes, and monthly reporting.</li>
+<li>Show a one-page sample: one real brand, 20 prompts, 4 platforms, findings and 5 fixes.</li>
+<li>Ramonov's sales pattern: post useful AEO content on LinkedIn; offer a playbook; book an audit call; show the prospect their gaps against competitors. Lead with results, not jargon.</li>
+</ul>
+<hr />
+<h2 id="part-8-your-path-beginner-to-expert-then-marketing-automation">Part 8. Your path: beginner to expert, then marketing automation</h2>
+<h3 id="8-1-twelve-week-plan-about-5-to-8-hours-a-week">8.1 Twelve-week plan (about 5 to 8 hours a week)</h3>
+<table>
+<thead>
+<tr>
+<th>Weeks</th>
+<th>Learn</th>
+<th>Do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 to 2</td>
+<td>Ahrefs SEO Course for Beginners (keywords, on-page, links, technical)</td>
+<td>Set up Search Console, GA4 and Bing Webmaster Tools on a site you control</td>
+</tr>
+<tr>
+<td>3 to 4</td>
+<td>Ahrefs AEO Course; parts 1 to 3 of this guide</td>
+<td>Run 20 prompts about one brand on 4 platforms; log names and citations</td>
+</tr>
+<tr>
+<td>5 to 6</td>
+<td>Technical audits with Screaming Frog; robots.txt and bots; schema</td>
+<td>Full technical and AI-access audit of one site</td>
+</tr>
+<tr>
+<td>7 to 8</td>
+<td>Content for answers; entity work; source-of-truth grid</td>
+<td>Rewrite 3 sections answer-first; build a facts page and Organization schema</td>
+</tr>
+<tr>
+<td>9 to 10</td>
+<td>Ahrefs Advanced Link Building; digital PR</td>
+<td>Build a prospect list of 30 pages, segment by reason, write 2 outreach templates</td>
+</tr>
+<tr>
+<td>11 to 12</td>
+<td>Measurement and reporting</td>
+<td>A Looker Studio dashboard and a one-page monthly report; rerun the 20 prompts and compare</td>
+</tr>
+</tbody>
+</table>
+<p>Capstone: one full case study (before and after, with numbers) you can show clients.</p>
+<h3 id="8-2-certificates">8.2 Certificates</h3>
+<p>Certificates help a profile, but a real result helps more. Ahrefs' own blog argues that ranking a real site teaches more than any certificate.
+- Free: Ahrefs Academy courses (the AEO course has a 50-question exam), Semrush Academy, Google Analytics certification (Google Skillshop), HubSpot SEO, Google Search Central documentation.
+- Paid: Moz SEO Essentials (about $595).</p>
+<h3 id="8-3-bridge-to-marketing-automation">8.3 Bridge to marketing automation</h3>
+<p>AEO and SEO have many repeat tasks. These are your first automations, and your portfolio for automation work:</p>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Automation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Weekly AI prompt runs</td>
+<td>n8n schedule → DataForSEO or a tracker API → sheet or database → scores</td>
+</tr>
+<tr>
+<td>Monthly report</td>
+<td>Search Console API + GA4 Data API + tracker data → Looker Studio or a PDF → email or Slack</td>
+</tr>
+<tr>
+<td>Bot and 404 watch</td>
+<td>Logs or Cloudflare → alert in Slack when an AI-cited URL returns 404</td>
+</tr>
+<tr>
+<td>Lost-mention watch</td>
+<td>Mention tracker → alert → draft a correction request</td>
+</tr>
+<tr>
+<td>Content brief</td>
+<td>Top results + fan-out questions + facts page → draft brief for a writer</td>
+</tr>
+<tr>
+<td>Outreach pipeline</td>
+<td>Prospect sheet → email finder → verifier → CRM stages → follow-up reminders</td>
+</tr>
+<tr>
+<td>Lead capture from calculators</td>
+<td>Form before the result → CRM → sales alert</td>
+</tr>
+</tbody>
+</table>
+<p>Rule from the link-building course that also fits automation: build a <strong>system</strong> (structure, goals, SOPs, a project board, shared data), not one-off heroics.</p>
+<hr />
+<h2 id="part-9-templates">Part 9. Templates</h2>
+<p>Copy these. Change the words in [brackets].</p>
+<h3 id="9-1-one-page-summary-for-decision-makers">9.1 One-page summary (for decision makers)</h3>
+<blockquote>
+<p><strong>[Brand]: search and AI answer check, [date]</strong></p>
+<p><strong>Where you stand.</strong> Readiness [score]/100 ([level]). Named in [x]% of [n] buyer questions across [platforms], [n] runs each. Competitors: [A] [x]%, [B] [x]%. AI tools state your key facts correctly [x]% of the time.</p>
+<p><strong>What we found.</strong> (3 to 5 lines, plain words, each with its business effect.)
+1. [Finding]. This means [effect on buyers or sales].</p>
+<p><strong>What to do first.</strong> (5 fixes, each with owner and time.)
+1. [Fix]: [owner], [time].</p>
+<p><strong>What this test did not cover.</strong> [Platforms, countries, questions not tested.] AI answers change from run to run; we ran each question [n] times.</p>
+<p><strong>What we need from you.</strong> [Access, facts to confirm, approvals.]</p>
+</blockquote>
+<h3 id="9-2-fix-card-one-per-fix">9.2 Fix card (one per fix)</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fix</td>
+<td>[Short name]</td>
+</tr>
+<tr>
+<td>Why</td>
+<td>[What is broken and what it costs]</td>
+</tr>
+<tr>
+<td>Evidence</td>
+<td>[URL, screenshot, answer]</td>
+</tr>
+<tr>
+<td>Who</td>
+<td>[Role or person]</td>
+</tr>
+<tr>
+<td>Time</td>
+<td>[Hours or days]</td>
+</tr>
+<tr>
+<td>Access needed</td>
+<td>[CMS, DNS, Search Console ...]</td>
+</tr>
+<tr>
+<td>Steps</td>
+<td>1. ... 2. ... 3. ...</td>
+</tr>
+<tr>
+<td>Done when</td>
+<td>[A test anyone can check]</td>
+</tr>
+<tr>
+<td>Rerun</td>
+<td>[Which questions or checks to repeat afterwards]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="9-3-prompt-log-one-row-per-answer">9.3 Prompt log (one row per answer)</h3>
+<p><code>date | platform | model shown | country | logged in? | search on? | run # | prompt id | prompt | topic | brand named? | position | brand cited? | cited URLs | competitors named | answer text | grade (for fact questions) | notes</code></p>
+<h3 id="9-4-claims-register-one-row-per-approved-fact">9.4 Claims register (one row per approved fact)</h3>
+<p><code>claim id | approved wording | evidence URL | owner | last checked | recheck trigger (for example new CEO, price change)</code></p>
+<h3 id="9-5-source-of-truth-grid">9.5 Source-of-truth grid</h3>
+<table>
+<thead>
+<tr>
+<th>Fact</th>
+<th>Own site</th>
+<th>Wikipedia</th>
+<th>Wikidata</th>
+<th>LinkedIn</th>
+<th>Business listings</th>
+<th>Top third-party page</th>
+<th>AI answers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Founded</td>
+<td>[value]</td>
+<td>[value]</td>
+<td>...</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CEO</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Headquarters</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Mark each wrong cell. The column with the most wrong cells is usually the first fix.</p>
+<h3 id="9-6-change-log">9.6 Change log</h3>
+<p><code>date | page or asset | what changed | why | expected effect | checked on | result</code></p>
+<h3 id="9-7-outreach-email-fill-after-you-write-one-real-email-to-one-real-person">9.7 Outreach email (fill after you write one real email to one real person)</h3>
+<blockquote>
+<p><strong>Subject:</strong> [honest reason, for example "Your list of [category] tools"]</p>
+<p>Hi [first name],</p>
+<p>I read your [page title] and saw you list [competitors] for [use]. [Brand] is missing, and it is often the pick for [specific buyer] because [one concrete reason with a number].</p>
+<p>[One honest line: where it is not the best fit.]</p>
+<p>If useful, here is [a short summary, data, or free access] so you can check it yourself: [link].</p>
+<p>Would it be worth a look for your readers?</p>
+<p>[Name]</p>
+</blockquote>
+<p>Keep it under 120 words. One email per reason segment. Test it on 10 to 20 people before the full list.</p>
+<h3 id="9-8-ga4-ai-traffic-channel">9.8 GA4 AI traffic channel</h3>
+<p>GA4 → Admin → Data display → Channel groups → copy the default group → add channel "AI traffic", condition <strong>Session source matches regex</strong>:</p>
+<p><code>.*(chatgpt\.com|chat\.openai\.com|perplexity\.ai|gemini\.google\.com|copilot\.microsoft\.com|claude\.ai|deepseek\.com|grok\.com|meta\.ai).*</code></p>
+<p>Move it above "Referral" so it is matched first. Add new AI sites to the regex as they appear.</p>
+<h3 id="9-9-monthly-report-outline">9.9 Monthly report outline</h3>
+<ol>
+<li>Headline: what changed this month, in one sentence.</li>
+<li>Scores against last month and the baseline (readiness, AI visibility, accuracy, search).</li>
+<li>Leads and conversions, with self-reported AI discovery.</li>
+<li>What we did (from the change log).</li>
+<li>What we learned (wins, misses, surprises).</li>
+<li>Next month's plan.</li>
+<li>Limits of the data.</li>
+</ol>
+<hr />
+<h2 id="part-10-glossary">Part 10. Glossary</h2>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AEO</td>
+<td>Answer engine optimization: being named, correct and cited in AI answers</td>
+</tr>
+<tr>
+<td>Anchor text</td>
+<td>The clickable words of a link</td>
+</tr>
+<tr>
+<td>Answer engine</td>
+<td>An AI tool that writes answers (ChatGPT, Gemini, Perplexity, AI Overviews)</td>
+</tr>
+<tr>
+<td>Backlink</td>
+<td>A link from another site to yours</td>
+</tr>
+<tr>
+<td>BLUF</td>
+<td>Bottom line up front: the answer first</td>
+</tr>
+<tr>
+<td>Canonical tag</td>
+<td>Code that names the preferred URL among similar pages</td>
+</tr>
+<tr>
+<td>Citation (AEO)</td>
+<td>The answer links to a source page</td>
+</tr>
+<tr>
+<td>Citation (local SEO)</td>
+<td>A listing of the business's name, address and phone on another site</td>
+</tr>
+<tr>
+<td>Claims register</td>
+<td>A list of the brand's approved facts, each with a source, owner and check date</td>
+</tr>
+<tr>
+<td>Core Web Vitals</td>
+<td>Google's speed and stability metrics: LCP, INP, CLS</td>
+</tr>
+<tr>
+<td>Crawler, bot</td>
+<td>A program that visits and reads web pages</td>
+</tr>
+<tr>
+<td>DR, domain rating</td>
+<td>Ahrefs' score for the strength of a site's backlink profile (other tools have their own versions)</td>
+</tr>
+<tr>
+<td>E-E-A-T</td>
+<td>Experience, expertise, authoritativeness, trustworthiness</td>
+</tr>
+<tr>
+<td>Entity</td>
+<td>A thing with stable facts: a company, person, product, place</td>
+</tr>
+<tr>
+<td>Fan-out</td>
+<td>The hidden sub-searches an AI runs for one question</td>
+</tr>
+<tr>
+<td>GEO</td>
+<td>Generative engine optimization, a near-synonym of AEO</td>
+</tr>
+<tr>
+<td>Index</td>
+<td>A search engine's stored copy of the pages it knows</td>
+</tr>
+<tr>
+<td>IndexNow</td>
+<td>A protocol that tells search engines (Bing and others) about page changes at once</td>
+</tr>
+<tr>
+<td>JSON-LD</td>
+<td>The usual format for schema markup</td>
+</tr>
+<tr>
+<td>Knowledge Graph</td>
+<td>Google's database of entities and their links</td>
+</tr>
+<tr>
+<td>llms.txt</td>
+<td>A proposed file that summarizes a site for AI tools; not used by major AI companies so far</td>
+</tr>
+<tr>
+<td>NAP</td>
+<td>Name, address, phone</td>
+</tr>
+<tr>
+<td>noindex</td>
+<td>A tag that asks search engines not to store a page</td>
+</tr>
+<tr>
+<td>Orphan page</td>
+<td>A page with no internal links pointing to it</td>
+</tr>
+<tr>
+<td>RAG</td>
+<td>Retrieval-augmented generation: the AI searches while it answers</td>
+</tr>
+<tr>
+<td>robots.txt</td>
+<td>The file that tells bots where they may go</td>
+</tr>
+<tr>
+<td>Schema markup</td>
+<td>Code that labels page facts for machines</td>
+</tr>
+<tr>
+<td>SERP</td>
+<td>Search engine results page</td>
+</tr>
+<tr>
+<td>Share of voice</td>
+<td>How often a brand is named compared with competitors</td>
+</tr>
+<tr>
+<td>Sitemap</td>
+<td>A file that lists the pages you want found</td>
+</tr>
+<tr>
+<td>Topical authority</td>
+<td>Being known as a strong source on one subject</td>
+</tr>
+<tr>
+<td>User agent</td>
+<td>The name a bot or browser sends to identify itself</td>
+</tr>
+<tr>
+<td>YMYL</td>
+<td>"Your money or your life" topics (health, money, legal) that need extra trust</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="part-11-sources">Part 11. Sources</h2>
+<ul>
+<li>Ahrefs, SEO Course for Beginners (Sam Oh): https://ahrefs.com/academy/seo-training-course</li>
+<li>Ahrefs, Answer Engine Optimization course (Sam Oh): https://ahrefs.com/academy/aeo-course</li>
+<li>Ahrefs, Advanced Link Building course (Sam Oh): https://ahrefs.com/academy/link-building-course</li>
+<li>Ahrefs, Brand Gap Analysis report template and Link + Mentions Prospecting sheet (AEO course, lesson 2.1)</li>
+<li>Sabrina Ramonov, AI SEO for Beginners (video transcript)</li>
+<li>Rodrigo Stockebrand, <em>Answer Engine Optimization</em>, O'Reilly (July 2026); Brandleap AI Brand Truth sample (Mauna Loa, Oct 2026), AI Visibility Index (Hyperlite, Oct 2026), technical readiness example, 2026 AEO Playbook</li>
+<li>Semrush, "What 3,900 SEO Job Listings Reveal in 2026": https://www.semrush.com/blog/seo-job-market-study/</li>
+<li>The SEO Cube, "I Analyzed 6,000+ SEO Job Postings": https://theseocube.com/p/ai-impact-on-seo-jobs</li>
+<li>Upwork AEO and GEO job posts, Oct 2026 (for example https://www.upwork.com/freelance-jobs/apply/SEO-AIEO-GEO-Specialist-for-B2B-Cybersecurity-Company_~022114440878420894827/ and https://www.upwork.com/freelance-jobs/apply/SEO-and-Search-AEO-GEO-Specialist-White-Label-Partner-Driven-Agency_~022112563227619849015/)</li>
+<li>Upwork hourly rates guide: https://www.upwork.com/resources/upwork-hourly-rates ; Upwork SEO cost page: https://www.upwork.com/hire/seo-experts/cost/</li>
+<li>AI visibility tool pricing roundups (2026): https://www.elitecontentmarketer.com/best-ai-visibility-tools/ , https://ainora.lt/blog/best-ai-visibility-tracking-tools-2026</li>
+<li>Bing Webmaster Tools AI Performance report: https://searchengineland.com/bing-webmaster-tools-testing-new-ai-performance-report-468039</li>
+<li>Google, "AI features and your website": https://developers.google.com/search/docs/appearance/ai-features ; Google Search Central blog, May 2026: https://developers.google.com/search/blog/2026/05/a-new-resource-for-optimizing</li>
+<li>Local SEO tools: https://searchatlas.com/blog/brightlocal-vs-whitespark/</li>
+<li>SEO certifications: https://ahrefs.com/blog/seo-certification , https://markampus.com/blog/semrush-certifications-worth-getting-2026/</li>
+</ul></main></div></body></html>
