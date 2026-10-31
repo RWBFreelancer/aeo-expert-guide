@@ -1,6 +1,6 @@
 # The AEO, GEO and SEO Field Guide
 
-For Rey. Version 1, 31 Oct 2026.
+For anyone who wants to learn and do SEO, AEO and GEO work. Version 1, 31 Oct 2026.
 
 This is the one guide to use when you do SEO, AEO and GEO work for a client. It goes from first look to long-term care: inspect the brand, suggest fixes, build them, keep them healthy, and grow. It is written for a beginner, but it shows how an expert thinks at each step.
 

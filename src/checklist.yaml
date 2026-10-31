@@ -1,4 +1,4 @@
-# Practitioner Checklist (Rey). One row per task. Edit freely; run build.py to rebuild.
+# Practitioner Checklist. One row per task. Edit freely; run build.py to rebuild.
 # Fields: id, task, why (plain reason), how (method or tool), done (pass bar).
 title: "AEO, GEO and SEO Practitioner Checklist"
 subtitle: "Every task from first look to long-term care. Use with the Field Guide (part numbers in brackets)."

@@ -57,7 +57,7 @@ Prices change often. They are entry prices seen in 2026 and are only a guide. Ch
 | Semrush | Keywords, competitors, site audit, rank tracking, local add-on, AI Visibility Toolkit (sold alone at about $99 a month per domain on annual billing, per one review) | Keyword research, competitor research, audits |
 | Ahrefs | Backlink data, Keywords Explorer, Content Explorer (prospecting), Site Explorer; Brand Radar for AI visibility | Link research, outreach prospecting, content gaps, AI mentions |
 | Moz Pro, SE Ranking | Cheaper all-in-ones | Small budgets |
-| Semdash | Budget suite (keywords, backlinks, some AI Overview data); Buzz Insider uses it | Small budgets |
+| Semdash | Budget suite (keywords, backlinks, some AI Overview data) | Small budgets |
 | Similarweb | Market and traffic estimates | Competitive market sizing |
 
 **Crawlers (technical audits)**
@@ -126,7 +126,7 @@ Expert view: compare tools on **prompt count, engines covered, country setting, 
 | About $100 to $150 a month | Add one suite at entry level (Semrush or Ahrefs, or a budget suite) and one cheap AI tracker (Otterly or ZeroRank Starter) |
 | Agency | Full suite, Screaming Frog licence, a local tool, an outreach tool, an AI tracker with more prompts, white-label reporting |
 
-Rule: **one tool per job**. Many tools averaging different numbers is a common mess. Buzz Insider named this pain on 20 Oct.
+Rule: **one tool per job**. Many tools that give different numbers for the same thing make a common mess.
 
 ---
 
